@@ -95,7 +95,7 @@ class Li_gpt_base:
 
     def generate_questions(self, questions):
         for chunk in self.run("filler context", "filler question").stream(questions):
-            print(chunk, end="", flush=True)
+            yield chunk
 
 
 def __main__():
