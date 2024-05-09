@@ -11,6 +11,10 @@ const RightSection = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]); // Store messages here
   const messagesEndRef = useRef(null);
+
+  const responseMessageIdRef = useRef(0);
+
+  
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -21,18 +25,30 @@ const RightSection = () => {
 
   const handleSubmit = () => {
     if (input.trim()) {
-      const newMessages = [...messages, { type: 'user', text: input }];
-      setMessages(newMessages);
-      setInputString(input); // Send input to Flask and reset input field
+      responseMessageIdRef.current += 1;  // Increment the response message ID
+      const newMessage = { type: 'user', text: input, id: responseMessageIdRef.current };
+      setMessages([...messages, newMessage]);
+      setInputString(input);
       setInput("");
+      // Prepare a place for the response
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { type: 'chatgpt', text: '', id: responseMessageIdRef.current }
+      ]);
     }
   };
-
   // When response is received, update messages to include the response
-  React.useEffect(() => {
+  useEffect(() => {
     if (response) {
-      const newMessages = [...messages, { type: 'chatgpt', text: response }];
-      setMessages(newMessages);
+      setMessages((prevMessages) => {
+        const index = prevMessages.findIndex(msg => msg.id === responseMessageIdRef.current && msg.type === 'chatgpt');
+        if (index !== -1) {
+          const updatedMessages = [...prevMessages];
+          updatedMessages[index].text += response;  // Append new response data
+          return updatedMessages;
+        }
+        return prevMessages;
+      });
     }
   }, [response]);
   return (
