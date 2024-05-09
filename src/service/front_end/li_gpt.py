@@ -94,14 +94,5 @@ class Li_gpt_base:
         return "\n\n".join(doc.page_content for doc in docs)
 
     def generate_questions(self, questions):
-        for chunk in self.run("filler context", "filler question").stream(questions):
-            yield chunk
-
-
-def __main__():
-    li_gpt = Li_gpt_base()
-    li_gpt.generate_questions("Can you provide some electrolyte and with corresponding Coulombic efficiency of 99.5?")
-
-
-if __name__ == "__main__":
-    __main__()
+        return self.run("filler context", "filler question").invoke(questions)
+            

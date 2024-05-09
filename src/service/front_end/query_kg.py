@@ -3,7 +3,7 @@ from langchain_community.graphs import Neo4jGraph
 from langchain_openai import ChatOpenAI
 import os
 class Neo4J_QA:
-    def __init__(self, url = '', username = 'neo4j', password = '', openai_api_key = None, QA_model = "gpt-4"):
+    def __init__(self, url = '', username = 'neo4j', password = '', openai_api_key = None, QA_model = "gpt-4-turbo"):
         if openai_api_key is None:
             openai_api_key = os.getenv('OPENAI_API_KEY')
             if openai_api_key is None:

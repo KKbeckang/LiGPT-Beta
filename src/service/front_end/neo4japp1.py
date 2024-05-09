@@ -27,12 +27,15 @@ def handle_query():
     query = data['query']
     try:
         
+        
+        li_result = li_gpt.generate_questions(query)
         result = neo4j_qa.query(query)
         
-        return Response(
-            stream_with_context(li_gpt.generate_questions(query)),
-            mimetype='text/plain'
-        )
+        return jsonify({
+            'li_gpt-answer': li_result,
+            'intermediary_steps': result['intermediate_steps'],
+            'answer': result['result']
+        })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 

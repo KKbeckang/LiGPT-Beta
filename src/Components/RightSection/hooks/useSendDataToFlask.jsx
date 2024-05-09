@@ -8,11 +8,10 @@ function useSendDataToFlask(initialInput) {
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {
+     useEffect(() => {
         const sendData = async () => {
-            if (!inputString) return;  // Exit if no input
+            if (!inputString) return; // Exit if no input
             setIsLoading(true);
-            setChunks([]);  // Reset chunks on new input
             try {
                 const response = await fetch('http://localhost:8080/process-data', {
                     method: 'POST',
@@ -29,27 +28,22 @@ function useSendDataToFlask(initialInput) {
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
 
-                const read = () => {
-                    reader.read().then(({ done, value }) => {
-                        if (done) {
-                            setIsLoading(false);
-                            return;
-                        }
+                reader.read().then(function processText({ done, value }) {
+                    if (done) {
+                        setIsLoading(false);
+                        return;
+                    }
 
-                        // Update the chunks state with each new chunk
-                        setChunks(prev => [...prev, decoder.decode(value)]);
-                        read();  // Continue reading
-                    });
-                };
+                    // Update the response state with each chunk
+                    setResponse((prevResponse) => prevResponse + decoder.decode(value, { stream: true }));
+                    return reader.read().then(processText);
+                });
 
-                read();
             } catch (error) {
                 setError('Error processing data: ' + error.message);
                 setIsLoading(false);
             }
         };
-
-        sendData();
 
         sendData();
     }, [inputString]); // Effect depends on `inputString`
