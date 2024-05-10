@@ -43,12 +43,12 @@ python li_gpt_server
 [Provide instructions on how to use your project. Include any relevant information or examples.]
 
 ## Technologies Used
-Vite.js
-Python
-LangChain
-OpenAI
-Neo4j
-tailwindcss 
+- Vite.js
+- Python
+- LangChain
+- OpenAI
+- Neo4j
+- tailwindcss 
 
 ## Contributing
 
