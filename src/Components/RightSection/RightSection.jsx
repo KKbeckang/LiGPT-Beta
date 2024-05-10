@@ -31,16 +31,28 @@ const RightSection = () => {
   // When response is received, update messages to include the response
   useEffect(() => {
     if (response) {
-      const { li_gpt_answer, intermediary_steps, answer } = response;
-      const formattedResponse = `
-        Lithium-GPT Answer:\n${li_gpt_answer}\n\n
-        Intermediary Steps:\n${intermediary_steps}\n\n
-        KnowLedge Graph Answer:\n${answer}
-      `;
+      const { answer, li_gpt_answer, intermediary_steps } = response;
+      let formattedResponse = `
+        Knowledge Graph Answer:\n${answer}\n\n
+        LiGPT Answer Answer:\n${li_gpt_answer}\n\n
+        Intermediary Steps:\n`;
+  
+      // Display cypher text
+      formattedResponse += `Cypher Text:\n${intermediary_steps[0].query}\n\n`;
+  
+      // Display Coulombic Efficiency and Electrolyte Name for each step
+      intermediary_steps[1].context.forEach((step, index) => {
+        formattedResponse += `${index + 1}. Coulombic Efficiency: ${step.CoulombicEfficiency}, Electrolyte Name: ${step.ElectrolyteName}\n`;
+      });
+  
       const newMessages = [...messages, { type: 'chatgpt', text: formattedResponse }];
       setMessages(newMessages);
+      console.log(response)
     }
   }, [response]);
+  
+  
+  
   return (
     <div className="flex h-full flex-1 flex-col md:pl-[260px]">
       <main className="relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1">

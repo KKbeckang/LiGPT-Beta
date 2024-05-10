@@ -38,7 +38,7 @@ function useSendDataToFlask(initialInput) {
 
                     // Update the response state with each chunk
                     setResponse((prevResponse) => prevResponse + decoder.decode(value, { stream: true }));
-                    console.log(response)
+                    
                     return reader.read().then(processText);
                 });
 
@@ -50,7 +50,7 @@ function useSendDataToFlask(initialInput) {
 
         sendData();
     }, [inputString]); // Effect depends on `inputString`
-
+    
 
     return { setInputString, response, error, isLoading };
 }
