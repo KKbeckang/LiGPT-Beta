@@ -2,6 +2,8 @@
 LithiumMind - Leveraging Language Models for Understanding Battery Performance
 
 ## Overview
+![image](https://github.com/KKbeckang/LiGPT-Beta/assets/51975603/2d4b7923-ffe4-40c0-8f0b-114008e4495b)
+
 
 LLM for Lithium Batteries' Electrolyte Design
 Advanced Chatbot for Lithium Battery Q/A
@@ -39,8 +41,10 @@ pip install flask flask_cors
 python li_gpt_server
 
 ## Usage
+if successfully implemented
+usually after inputting answer, you should see Flask will prompt a similar log like below:
 
-[Provide instructions on how to use your project. Include any relevant information or examples.]
+![image](https://github.com/KKbeckang/LiGPT-Beta/assets/51975603/dddb976f-e556-490c-bab0-f416b4fcaa0c)
 
 ## Technologies Used
 - Vite.js
