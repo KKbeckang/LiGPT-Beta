@@ -95,4 +95,4 @@ class Li_gpt_base:
 
     def generate_questions(self, questions):
         return self.run("filler context", "filler question").invoke(questions)
-            
+

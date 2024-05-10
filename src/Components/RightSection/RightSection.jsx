@@ -29,9 +29,15 @@ const RightSection = () => {
   };
 
   // When response is received, update messages to include the response
-  React.useEffect(() => {
+  useEffect(() => {
     if (response) {
-      const newMessages = [...messages, { type: 'chatgpt', text: response }];
+      const { li_gpt_answer, intermediary_steps, answer } = response;
+      const formattedResponse = `
+        Lithium-GPT Answer:\n${li_gpt_answer}\n\n
+        Intermediary Steps:\n${intermediary_steps}\n\n
+        KnowLedge Graph Answer:\n${answer}
+      `;
+      const newMessages = [...messages, { type: 'chatgpt', text: formattedResponse }];
       setMessages(newMessages);
     }
   }, [response]);
@@ -42,15 +48,15 @@ const RightSection = () => {
           <div className="flex flex-col items-center text-sm h-full md:h-screen bg-lightBlack">
             <div className="text-white w-full md:max-w-2xl lg:max-w-3xl md:h-full md:flex md:flex-col px-6 overflow-y-auto scrollbar-hide"  style={{ paddingBottom: '250px' }}>
             {messages.map((msg, index) => (
-                <div key={index} className="flex flex-col items-start my-2 max-w-2/3 p-2 rounded-lg" >
-                  <div className="flex items-center">
-                {msg.type === 'chatgpt' && <img src={ChatGPTIcon} alt="ChatGPT Icon" className="h-6 w-6 mr-2 rounded-full ring-0.5 ring-white " />}
-                  {msg.type === 'user' &&    <img src={UserIcon} alt="User Icon" className="h-6 w-6 mr-2 rounded-full ring-0.5 ring-white" />}
-                    <h2 className="font-bold">{msg.type === 'user' ? 'You:' : 'Lithium-GPT:'}</h2>
-                  </div>
-                  <p className="text-sm mt-2">{msg.text}</p>
-                </div>
-              ))}
+            <div key={index} className="flex flex-col items-start my-2 max-w-2/3 p-2 rounded-lg" >
+              <div className="flex items-center">
+            {msg.type === 'chatgpt' && <img src={ChatGPTIcon} alt="ChatGPT Icon" className="h-6 w-6 mr-2 rounded-full ring-0.5 ring-white " />}
+              {msg.type === 'user' && <img src={UserIcon} alt="User Icon" className="h-6 w-6 mr-2 rounded-full ring-0.5 ring-white" />}
+                <h2 className="font-bold">{msg.type === 'user' ? 'You:' : 'Lithium-GPT:'}</h2>
+              </div>
+              <p className="text-sm mt-2" dangerouslySetInnerHTML={{ __html: msg.text.split("\n").join("<br/>") }}></p>
+            </div>
+          ))}
               <div ref={messagesEndRef} />
             </div>
           </div>

@@ -10,10 +10,10 @@ CORS(app)  # This enables CORS for all domains on all routes
 
 # Initialize your Neo4j QA class
 neo4j_qa = Neo4J_QA(
-    url='neo4j+s://4013e16e.databases.neo4j.io',
-    username='neo4j',
-    password='VDmPllshrEcn7aguGdwu5haCHHff7Fom5LsUR9YuXEY',
-    openai_api_key='sk-proj-alsQWElBoA8LRIge6qoDT3BlbkFJGOLJJJygxqhfxW8UriYe'
+    url='',
+    username='',
+    password='',
+    openai_api_key=''
 )
 
 li_gpt = Li_gpt_base()

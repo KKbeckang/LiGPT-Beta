@@ -13,16 +13,18 @@ function useSendDataToFlask(initialInput) {
             if (!inputString) return; // Exit if no input
             setIsLoading(true);
             try {
-                const response = await fetch('http://localhost:8080/process-data', {
-                    method: 'POST',
+                const response = await axios.post('http://localhost:8080/process-data', {
+                    query: inputString
+                }, {
                     headers: {
                         'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ query: inputString })
+                    }
                 });
 
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                if (response.status === 200) {
+                    setResponse(response.data);
+                } else {
+                    throw new Error(`Received status code ${response.status}`);
                 }
 
                 const reader = response.body.getReader();
@@ -36,6 +38,7 @@ function useSendDataToFlask(initialInput) {
 
                     // Update the response state with each chunk
                     setResponse((prevResponse) => prevResponse + decoder.decode(value, { stream: true }));
+                    console.log(response)
                     return reader.read().then(processText);
                 });
 
