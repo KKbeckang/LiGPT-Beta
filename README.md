@@ -1,6 +1,8 @@
 # Lithium-GPT
 LithiumMind - Leveraging Language Models for Understanding Battery Performance
 
+Submission for LLM Hackathon for Applications in Materials and Chemistry
+
 ## Overview
 ![image](https://github.com/KKbeckang/LiGPT-Beta/assets/51975603/2d4b7923-ffe4-40c0-8f0b-114008e4495b)
 [Front_end video_here](https://drive.google.com/file/d/1_ZFj8VcUbT_thbjsd1bMfm5z5EKg91vk/view?usp=sharing)
