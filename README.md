@@ -38,11 +38,15 @@ navigate to [http://localhost:5173/](http://localhost:5173/)
 
 ### Fire up Flask server:
 
-- find environment_ligpt.yml to switch install python dependencies
-  
-pip install flask flask_cors
+Install the Python dependencies (the embedding models run on a CUDA GPU, `cuda:0`):
 
-python li_gpt_server
+pip install -r requirements.txt
+
+Copy `.env.example` to `src/service/front_end/.env` and fill in your OpenAI API key and Neo4j connection (the notebooks read a `.env` in the repository root). Never commit `.env`.
+
+cd src/service/front_end
+
+python li_gpt_server.py
 
 ## Usage
 if successfully implemented
@@ -84,11 +88,16 @@ You've updated the README with any necessary information about your changes.
 Code Style
 Please follow the existing code style and formatting conventions when making changes to the codebase. If you're unsure about the style, feel free to ask for guidance.
 
+## Errata
+The LithiumMind write-up in the hackathon report ([arXiv:2411.15221](https://arxiv.org/abs/2411.15221)) gives 334 CE–electrolyte pairs extracted from 71 papers. That number matches the output of the record loader in `build_kg.ipynb`, which added every extracted record twice. The files in `database/extracted_info/` hold 167 records (164 unique, 147 with a CE value). The loader is now fixed, so a knowledge graph built from this repository no longer gets duplicate electrolyte nodes. The 46 matches with the original dataset reported in the write-up have not been rechecked.
+
 ## License
 MIT
 
 ## Acknowledgements
 Xinyi Ni, Zizhang Chen, Rongda Kang, Sheng-Lun (Mark) Liao, Pengyu Hong, Sandeep R. Madireddy
+
+The front-end UI is adapted from a ChatGPT clone UI by mayeskhatri243.
 
 
 

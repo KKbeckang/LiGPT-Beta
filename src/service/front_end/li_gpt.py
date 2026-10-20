@@ -41,7 +41,10 @@ class Li_gpt_base:
     def load_env_variables(self, filename):
         with open(filename) as f:
             for line in f:
-                key, value = line.strip().split('=')
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                key, value = line.split('=', 1)
                 os.environ[key] = value
 
     def setup_embeddings(self):

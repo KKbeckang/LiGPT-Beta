@@ -8,15 +8,15 @@ from li_gpt import Li_gpt_base
 app = Flask(__name__)
 CORS(app)  # This enables CORS for all domains on all routes
 
-# Initialize your Neo4j QA class
-neo4j_qa = Neo4J_QA(
-    url='neo4j+s://4013e16e.databases.neo4j.io',
-    username='neo4j',
-    password='VDmPllshrEcn7aguGdwu5haCHHff7Fom5LsUR9YuXEY',
-    openai_api_key='sk-proj-7d6jNcTiuYWtTemktWwKT3BlbkFJSNgq4ICd1LxLOup6frbm'
-)
-
+# Li_gpt_base loads .env into os.environ, so create it before reading the Neo4j settings
 li_gpt = Li_gpt_base()
+
+# Initialize your Neo4j QA class (the OpenAI key is read from OPENAI_API_KEY)
+neo4j_qa = Neo4J_QA(
+    url=os.getenv('NEO4J_URI'),
+    username=os.getenv('NEO4J_USERNAME', 'neo4j'),
+    password=os.getenv('NEO4J_PASSWORD'),
+)
 
 
 @app.route('/process-data', methods=['POST'])
