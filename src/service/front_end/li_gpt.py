@@ -99,3 +99,23 @@ class Li_gpt_base:
     def generate_questions(self, questions):
         return self.run("filler context", "filler question").invoke(questions)
 
+    def answer_with_sources(self, question, llm=None):
+        """Answer like generate_questions, and also return the passages the answer was built from."""
+        docs = self.compression_retriever.invoke(question)
+        prompt = hub.pull("rlm/rag-prompt")
+        chain = prompt | (llm or self.llm) | StrOutputParser()
+        answer = chain.invoke({"context": self.format_docs(docs), "question": question})
+        return answer, [self.describe_source(doc) for doc in docs]
+
+    @staticmethod
+    def describe_source(doc):
+        # Papers are stored as papers\<reference id>.pdf, with 0-based page numbers.
+        name = doc.metadata.get('source', '').replace('\\', '/').rsplit('/', 1)[-1]
+        ref = name.split('.')[0]
+        page = doc.metadata.get('page')
+        return {
+            'ref': int(ref) if ref.isdigit() else None,
+            'page': page + 1 if isinstance(page, int) else None,
+            'text': doc.page_content,
+        }
+

@@ -4,63 +4,71 @@ LithiumMind - Leveraging Language Models for Understanding Battery Performance
 Submission for LLM Hackathon for Applications in Materials and Chemistry
 
 ## Overview
-![image](https://github.com/KKbeckang/LiGPT-Beta/assets/51975603/2d4b7923-ffe4-40c0-8f0b-114008e4495b)
-[Front_end video_here](https://drive.google.com/file/d/1_ZFj8VcUbT_thbjsd1bMfm5z5EKg91vk/view?usp=sharing)
+![LithiumMind answering a question with the knowledge graph and the LLM side by side](docs/ui-results.png)
 
-[Server reaction video here](https://drive.google.com/file/d/1MX3PX1y-q66N8C3crfuOfKPvwTkOrhku/view?usp=sharing)
+Videos of the original 2024 hackathon front end: [front end](https://drive.google.com/file/d/1_ZFj8VcUbT_thbjsd1bMfm5z5EKg91vk/view?usp=sharing), [server](https://drive.google.com/file/d/1MX3PX1y-q66N8C3crfuOfKPvwTkOrhku/view?usp=sharing)
 
 LLM for Lithium Batteries' Electrolyte Design
 Advanced Chatbot for Lithium Battery Q/A
 
-
 ## Features
-- **QA model Text Generation with Lithium Battery focus**
-- **Cypher Text Generation**
-- **QA model Based On Lithium Graph Database**
-...
+- **Two answers to every question, side by side:** a knowledge-graph answer (the LLM writes Cypher, Neo4j returns ranked Coulombic efficiency facts with their source papers) and a retrieval-augmented LLM answer that cites the passages it used
+- **Cross-check:** each graph fact is checked against the retrieved passages, and the page shows which CE values appear in the source text
+- **Pick the model per question:** any OpenAI or Anthropic model listed in `LLM_MODELS`, for example GPT-4 Turbo or Claude Opus 5.5
+- **Demo mode** (`?demo`): runs without the server, on the 167 records extracted from the papers in `database/extracted_info/`, with recorded LLM answers for the example questions
+
 ## Installation
 
 To run this project locally, follow these steps:
 
-### Fire up Front-end Webpage
-
-Clone this repository to your local machine using **git clone **
-Navigate to the project directory using cd your-repo
-Install dependencies by running 
+### Front end
 
 npm install
 
-Start the development server with
-
 npm run dev
 
-navigate to [http://localhost:5173/](http://localhost:5173/)
+Open [http://localhost:5173/](http://localhost:5173/) (talks to the Flask server on port 8080; set `VITE_API_URL` to use another address), or [http://localhost:5173/?demo](http://localhost:5173/?demo) to try it without the server.
 
-### Fire up Flask server:
+### Flask server
 
-Install the Python dependencies (the embedding models run on a CUDA GPU, `cuda:0`):
+Install the Python dependencies (the embedding models run on a CUDA GPU, `cuda:0`; Claude support needs Python 3.10 or later):
 
 pip install -r requirements.txt
 
-Copy `.env.example` to `src/service/front_end/.env` and fill in your OpenAI API key and Neo4j connection (the notebooks read a `.env` in the repository root). Never commit `.env`.
+Copy `.env.example` to `src/service/front_end/.env` and fill in your keys and Neo4j connection (the notebooks read a `.env` in the repository root). Never commit `.env`.
 
 cd src/service/front_end
 
 python li_gpt_server.py
 
-## Usage
-if successfully implemented
-usually after inputting answer, you should see Flask will prompt a similar log like below:
+### Choosing models
 
-![image](https://github.com/KKbeckang/LiGPT-Beta/assets/51975603/dddb976f-e556-490c-bab0-f416b4fcaa0c)
+`LLM_MODELS` in `.env` lists the models the page offers, as `provider:model` entries; the first is the default:
+
+LLM_MODELS=openai:gpt-4-turbo,anthropic:claude-opus-5-5
+
+- `openai:<model>` uses `OPENAI_API_KEY`. Requests are sent with temperature 0; reasoning models that only accept temperature 1 need `OPENAI_TEMPERATURE=1`.
+- `anthropic:<model>` uses `ANTHROPIC_API_KEY` and the official Anthropic SDK. No sampling parameters are sent, since current Claude models reject them. Claude Opus 5.5, Opus 5, Sonnet 5.5 and Fable 5.1 requests turn on Anthropic's server-side refusal fallback (`fallbacks: "default"`), which reruns a declined request on another model. `ANTHROPIC_EFFORT` (`low` to `max`) sets the effort level; Claude Opus 5.5 defaults to `medium`.
+- The retrieval step still uses OpenAI embeddings, so `OPENAI_API_KEY` is needed with either provider.
+
+The server exposes `GET /models` and `POST /process-data` with `{"query": ..., "model": ...}`; the response carries the Cypher steps, both answers, the retrieved passages (`li_gpt_sources`) and the model used.
+
+## Demo video
+
+`video.html` is a motion-design walkthrough built from the real extraction results: open [http://localhost:5173/video.html](http://localhost:5173/video.html) while `npm run dev` is running (`?t=20` freezes one moment). To render it to MP4 (needs Playwright and ffmpeg):
+
+npm i -D playwright
+
+node scripts/render-video.mjs --out demo.mp4
+
+The page in the video runs in demo mode: graph rows are computed from the extracted records and the LLM answer is a recorded one, labelled as such on screen.
 
 ## Technologies Used
-- Vite.js
-- Python
+- Vite.js, React, Tailwind CSS, d3-force
+- Python, Flask
 - LangChain
-- OpenAI
+- OpenAI and Anthropic models
 - Neo4j
-- tailwindcss 
 
 ## Contributing
 

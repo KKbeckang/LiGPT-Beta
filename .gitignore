@@ -25,3 +25,11 @@ dist-ssr
 
 # Local secrets
 .env
+
+# Demo video renders
+/demo.mp4
+/frames
+
+# Python bytecode
+__pycache__/
+*.pyc

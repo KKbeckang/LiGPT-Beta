@@ -1,3 +1,4 @@
+anthropic==1.17.0; python_version >= "3.10"
 chromadb==0.4.24
 Flask==2.2.2
 flask_cors==4.0.1
