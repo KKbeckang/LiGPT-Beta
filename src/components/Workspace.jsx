@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { crossCheck } from '../lib/crosscheck';
+import { isGraph } from '../lib/graph';
 import { enter, progress } from '../lib/motion';
 import { activeLoadingStep, revealAt, revealTimeline } from '../lib/reveal';
 import { CrossCheck } from './CrossCheck';
@@ -9,6 +10,7 @@ import { KnowledgeGraphPanel } from './KnowledgeGraphPanel';
 import { LLMPanel } from './LLMPanel';
 import { ModelPicker } from './ModelPicker';
 import { PipelineSteps } from './PipelineSteps';
+import { ResultGraphSection } from './ResultGraph';
 import { QueryBox } from './QueryBox';
 
 function Shimmer({ elapsed, className, style }) {
@@ -46,10 +48,16 @@ function LoadingPanels({ elapsed }) {
   );
 }
 
-function Results({ result, elapsed }) {
+// graphElapsed lets the demo video start the graph animation when the camera reaches it.
+function Results({ result, elapsed, graphElapsed }) {
   const timeline = useMemo(() => revealTimeline(result), [result]);
   const check = useMemo(() => crossCheck(result.rows, result.sources), [result]);
+  const citedRefs = useMemo(() => new Set(result.sources.map((s) => s.ref)), [result]);
+  const confirmed = useMemo(() => new Set(check.items.filter((i) => i.status === 'confirmed').map((i) => `${i.ref}|${i.ce}`)), [check]);
   const reveal = revealAt(timeline, elapsed, result);
+  const graphProgress = graphElapsed == null ? reveal.graph : progress(graphElapsed, 0, timeline.graph[1] - timeline.graph[0]);
+  const highlight = graphElapsed == null ? reveal.cross : progress(graphElapsed, 2.4, 3.0);
+  const crossProgress = graphElapsed == null ? reveal.cross : progress(graphElapsed, 3.4, 4.0);
   const panelIn = enter(progress(elapsed, 0, 0.35), 14);
   return (
     <>
@@ -57,9 +65,21 @@ function Results({ result, elapsed }) {
         <KnowledgeGraphPanel result={result} reveal={reveal} style={panelIn} />
         <LLMPanel result={result} reveal={reveal} style={panelIn} />
       </div>
+      {isGraph(result.graph) && (
+        <div className="mt-5">
+          <ResultGraphSection
+            graph={result.graph}
+            progress={graphProgress}
+            highlight={highlight}
+            citedRefs={citedRefs}
+            confirmed={confirmed}
+            style={enter(Math.min(1, graphProgress * 4), 14)}
+          />
+        </div>
+      )}
       {check.items.length > 0 && result.sources.length > 0 && (
         <div className="mt-5">
-          <CrossCheck check={check} progress={reveal.cross} />
+          <CrossCheck check={check} progress={crossProgress} />
         </div>
       )}
     </>
@@ -98,6 +118,7 @@ export function Workspace({
   error,
   loadingElapsed = 0,
   revealElapsed = Infinity,
+  graphElapsed = null,
   readOnly = false,
   caret = false,
   pressed = false,
@@ -141,7 +162,7 @@ export function Workspace({
               )}
             </div>
             {phase === 'loading' && <LoadingPanels elapsed={loadingElapsed} />}
-            {phase === 'results' && <Results result={result} elapsed={revealElapsed} />}
+            {phase === 'results' && <Results result={result} elapsed={revealElapsed} graphElapsed={graphElapsed} />}
             {phase === 'error' && <ErrorCard error={error} demo={demo} />}
           </div>
         )}

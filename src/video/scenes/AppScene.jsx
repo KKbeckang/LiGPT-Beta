@@ -25,7 +25,20 @@ const T = {
   click: 7.8,
   submit: 7.95,
   answer: 10.55,
+  graph: 23.6,
 };
+
+// The page scrolls down to the result graph after the two answers.
+const GRAPH_SCROLL = 786;
+const SCROLL = [
+  [22.6, 0],
+  [23.9, GRAPH_SCROLL],
+];
+
+function scrollAt(l) {
+  const [[t0, a], [t1, b]] = SCROLL;
+  return lerp(a, b, easeInOutCubic(progress(l, t0, t1)));
+}
 
 // Camera keyframes: time, focus point (frame coordinates) and scale.
 const FULL = { x: APP_W / 2, y: FRAME_H / 2, s: 0.93 };
@@ -39,9 +52,13 @@ const SHOTS = [
   [19.3, { x: 375, y: 625, s: 1.22 }],
   [20.2, { x: 1065, y: 560, s: 1.25 }],
   [22.0, { x: 1065, y: 560, s: 1.25 }],
-  [22.9, { x: 720, y: 790, s: 1.3 }],
-  [24.5, { x: 720, y: 790, s: 1.3 }],
-  [25.6, FULL],
+  [22.9, FULL],
+  [23.9, FULL],
+  [24.7, { x: 720, y: 370, s: 1.3 }],
+  [27.4, { x: 720, y: 370, s: 1.3 }],
+  [28.2, { x: 720, y: 520, s: 1.18 }],
+  [30.0, { x: 720, y: 520, s: 1.18 }],
+  [31.0, FULL],
 ];
 
 function cameraAt(l) {
@@ -135,6 +152,7 @@ export function AppScene({ t }) {
         >
           <TitleBar />
           <div className="relative overflow-hidden" style={{ width: APP_W, height: APP_H }}>
+            <div style={{ transform: `translateY(${-scrollAt(l)}px)` }}>
             <Workspace
               demo
               phase={phase}
@@ -143,11 +161,13 @@ export function AppScene({ t }) {
               result={result}
               loadingElapsed={Math.max(0, l - T.submit)}
               revealElapsed={l - T.answer}
+              graphElapsed={l - T.graph}
               readOnly
               caret={caret}
               pressed={l >= 7.8 && l < 7.95}
               picker={{ models: DEMO_MODELS, value: DEMO_MODELS[0], open, hover }}
             />
+            </div>
           </div>
         </div>
         <Cursor x={cursor.x} y={cursor.y} pressed={pressed} opacity={cursorOpacity} />
@@ -165,7 +185,10 @@ export function AppScene({ t }) {
       <Caption k={progress(l, 20.3, 20.7) * (1 - progress(l, 21.9, 22.2))} eyebrow="LLM + RAG" accent="llm">
         The model explains why, citing the passages it retrieved
       </Caption>
-      <Caption k={progress(l, 23.0, 23.4) * (1 - progress(l, 24.4, 24.7))} eyebrow="Cross-check">
+      <Caption k={progress(l, 24.6, 25.0) * (1 - progress(l, 26.6, 26.9))} eyebrow="Result graph">
+        Read from Neo4j: the facts, their salts and solvents, and the papers both answers cite
+      </Caption>
+      <Caption k={progress(l, 28.2, 28.6) * (1 - progress(l, 29.8, 30.1))} eyebrow="Cross-check">
         {check.confirmed} of {check.items.length} graph CE values found verbatim in the retrieved source passages
       </Caption>
     </div>

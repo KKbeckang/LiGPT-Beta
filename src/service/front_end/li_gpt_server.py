@@ -41,6 +41,11 @@ def handle_query():
     try:
         llm = get_llm(model)
         result = neo4j_qa.query(query, llm=llm)
+        try:
+            graph = neo4j_qa.subgraph(result['intermediate_steps'][1]['context'])
+        except Exception as e:
+            app.logger.warning('Could not read the result subgraph: %s', e)
+            graph = None
         li_result, li_sources = li_gpt.answer_with_sources(query, llm=llm)
 
         return jsonify({
@@ -49,13 +54,15 @@ def handle_query():
             'answer': result['result'],
             'li_gpt_answer': li_result,
             'li_gpt_sources': li_sources,
+            'graph': graph,
             'model': model
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    # The Werkzeug debugger can run code sent to it, so it stays off unless FLASK_DEBUG=1.
+    app.run(debug=os.getenv('FLASK_DEBUG') == '1', port=8080)
 
             # 'intermediary_steps': result['intermediate_steps'],
             # 'answer': result['result']

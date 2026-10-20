@@ -16,7 +16,6 @@ export function revealTimeline(result) {
   const llmLength = result.llmAnswer ? result.llmAnswer.length : 0;
   const t = {
     cypher: [0, 1.0],
-    graph: [0.4, 1.9],
     rowsStart: 0.7,
     rowStagger: 0.12,
     rowDuration: 0.4,
@@ -24,6 +23,7 @@ export function revealTimeline(result) {
     llm: [0.5, 0.5 + llmLength / 150],
   };
   t.rowsEnd = t.rowsStart + t.rowStagger * Math.max(0, rows - 1) + t.rowDuration;
+  t.graph = [t.rowsEnd, t.rowsEnd + 2.4];
   t.sourcesStart = t.llm[1] + 0.1;
   t.sourcesEnd = t.sourcesStart + 0.1 * Math.max(0, sources - 1) + 0.35;
   const crossStart = Math.max(t.rowsEnd, t.sourcesEnd, t.graph[1]) + 0.15;

@@ -13,6 +13,7 @@ Advanced Chatbot for Lithium Battery Q/A
 
 ## Features
 - **Two answers to every question, side by side:** a knowledge-graph answer (the LLM writes Cypher, Neo4j returns ranked Coulombic efficiency facts with their source papers) and a retrieval-augmented LLM answer that cites the passages it used
+- **Result graph:** the electrolytes in the answer with their salts, solvents and papers, read from Neo4j; papers the LLM answer quoted are highlighted
 - **Cross-check:** each graph fact is checked against the retrieved passages, and the page shows which CE values appear in the source text
 - **Pick the model per question:** any OpenAI or Anthropic model listed in `LLM_MODELS`, for example GPT-4 Turbo or Claude Opus 5.5
 - **Demo mode** (`?demo`): runs without the server, on the 167 records extracted from the papers in `database/extracted_info/`, with recorded LLM answers for the example questions
@@ -31,7 +32,7 @@ Open [http://localhost:5173/](http://localhost:5173/) (talks to the Flask server
 
 ### Flask server
 
-Install the Python dependencies (the embedding models run on a CUDA GPU, `cuda:0`; Claude support needs Python 3.10 or later):
+Install the Python dependencies (Claude support needs Python 3.10 or later). The embedding models use the GPU when there is one and the CPU otherwise; set `EMBEDDING_DEVICE` to choose:
 
 pip install -r requirements.txt
 
@@ -51,7 +52,17 @@ LLM_MODELS=openai:gpt-4-turbo,anthropic:claude-opus-5-5
 - `anthropic:<model>` uses `ANTHROPIC_API_KEY` and the official Anthropic SDK. No sampling parameters are sent, since current Claude models reject them. Claude Opus 5.5, Opus 5, Sonnet 5.5 and Fable 5.1 requests turn on Anthropic's server-side refusal fallback (`fallbacks: "default"`), which reruns a declined request on another model. `ANTHROPIC_EFFORT` (`low` to `max`) sets the effort level; Claude Opus 5.5 defaults to `medium`.
 - The retrieval step still uses OpenAI embeddings, so `OPENAI_API_KEY` is needed with either provider.
 
-The server exposes `GET /models` and `POST /process-data` with `{"query": ..., "model": ...}`; the response carries the Cypher steps, both answers, the retrieved passages (`li_gpt_sources`) and the model used.
+The server exposes `GET /models` and `POST /process-data` with `{"query": ..., "model": ...}`; the response carries the Cypher steps, both answers, the retrieved passages (`li_gpt_sources`), the result subgraph read from Neo4j (`graph`) and the model used.
+
+### Checking a real setup
+
+`check_live.py` tries each piece the server needs, with the same `.env`, and prints PASS or FAIL for each: the environment, the Neo4j connection and graph contents, every model in `LLM_MODELS`, the embeddings and retrieval, and one question end to end.
+
+cd src/service/front_end
+
+python check_live.py
+
+It also flags a graph built by the earlier `build_kg.ipynb`, which loaded every record twice and linked electrolytes to other papers that share their name. Rebuild the graph with the current notebook if it reports either.
 
 ## Demo video
 

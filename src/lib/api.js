@@ -1,5 +1,6 @@
 import { answerFromDemo, DEMO_MODELS } from '../demo/engine';
 import { parseGraphName } from './electrolyte';
+import { graphFromRows, isGraph } from './graph';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
@@ -35,9 +36,11 @@ export async function ask(query, { demo, model }) {
 // Map the Flask /process-data payload onto the shape the UI renders.
 export function normalizeResponse(body) {
   const steps = body.intermediary_steps || [];
+  const rows = (steps[1]?.context || []).map(normalizeRow);
   return {
     cypher: (steps[0]?.query || '').trim(),
-    rows: (steps[1]?.context || []).map(normalizeRow),
+    rows,
+    graph: isGraph(body.graph) ? { ...body.graph, source: 'neo4j' } : graphFromRows(rows, 'derived'),
     kgAnswer: body.answer || '',
     llmAnswer: body.li_gpt_answer || '',
     sources: (body.li_gpt_sources || []).map((s) => ({ ref: s.ref ?? null, page: s.page ?? null, text: s.text || '' })),

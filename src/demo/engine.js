@@ -4,6 +4,7 @@
 // passages stored in the project's Chroma vector store; other questions get graph rows only.
 import records from './records.json';
 import { formatCE, formatElectrolyte, graphName } from '../lib/electrolyte';
+import { graphFromRows } from '../lib/graph';
 
 // Shown in the model picker in demo mode; the recorded answers do not depend on the choice.
 export const DEMO_MODELS = ['openai:gpt-4-turbo', 'anthropic:claude-opus-5-5', 'anthropic:claude-sonnet-5-5'];
@@ -133,6 +134,7 @@ export function answerFromDemo(query) {
   return {
     cypher: cypherFor(salts, solvents, { requireSolvent, singleSalt }),
     rows,
+    graph: graphFromRows(rows, 'demo'),
     kgAnswer: describe(rows, subject),
     llmAnswer: scenario?.llmAnswer || '',
     llmNote: scenario ? '' : 'Demo mode has recorded LLM answers for the first two example questions only. Start the Flask server to get live answers from the model you pick.',
