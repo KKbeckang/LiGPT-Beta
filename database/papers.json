@@ -1,0 +1,647 @@
+[
+ {
+  "ref": 1,
+  "title": "Lithium Difluorophosphate-Based Dual-Salt Low Concentration Electrolytes for Lithium Metal Batteries",
+  "first_author": "Zheng",
+  "journal": "Adv. Energy Mater.",
+  "year": 2020,
+  "doi": "10.1002/aenm.202001440",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 2,
+  "title": "Effects of Some Organic Additives on Lithium Deposition in Propylene Carbonate",
+  "first_author": "Mogi",
+  "journal": "J. Electrochem. Soc.",
+  "year": 2002,
+  "doi": "10.1149/1.1516770",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 3,
+  "title": "Molecular design for electrolyte solvents enabling energy-dense and long-cycling lithium metal batteries",
+  "first_author": "Yu",
+  "journal": "Nature Energy",
+  "year": 2020,
+  "doi": "10.1038/s41560-020-0634-5",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 4,
+  "title": "A LiPO2F2/LiFSI dual-salt electrolyte enabled stable cycling of lithium metal batteries",
+  "first_author": "Dong",
+  "journal": "J. Power Sources",
+  "year": 2018,
+  "doi": "10.1016/j.jpowsour.2018.08.059",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 5,
+  "title": "Potentiometric Measurement to Probe Solvation Energy and Its Correlation to Lithium Battery Cyclability",
+  "first_author": "Kim",
+  "journal": "J. Am. Chem. Soc.",
+  "year": 2021,
+  "doi": "10.1021/jacs.1c03868",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 6,
+  "title": "Unraveling the Dual Functionality of High-Donor-Number Anion in Lean-Electrolyte Lithium-Sulfur Batteries",
+  "first_author": "Chu",
+  "journal": "Adv. Energy Mater.",
+  "year": 2020,
+  "doi": "10.1002/aenm.202000493",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 7,
+  "title": "Dendrite-Free and Performance-Enhanced Lithium Metal Batteries through Optimizing Solvent Compositions and Adding Combinational Additives",
+  "first_author": "Li",
+  "journal": "Adv. Energy Mater.",
+  "year": 2018,
+  "doi": "10.1002/aenm.201703022",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 8,
+  "title": "Non-flammable electrolytes with high salt-to-solvent ratios for Li-ion and Li-metal batteries",
+  "first_author": "Zeng",
+  "journal": "Nature Energy",
+  "year": 2018,
+  "doi": "10.1038/s41560-018-0196-y",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 9,
+  "title": "Enabling High-Voltage Lithium Metal Batteries by Manipulating Solvation Structure in Ester Electrolyte",
+  "first_author": "Jie",
+  "journal": "Angew. Chem. Int. Ed.",
+  "year": 2020,
+  "doi": "10.1002/anie.201914250",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 10,
+  "title": "Combinatorial Methods for Improving Lithium Metal Cycling Efficiency",
+  "first_author": "Genovese",
+  "journal": "J. Electrochem. Soc.",
+  "year": 2018,
+  "doi": "10.1149/2.0401813jes",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 11,
+  "title": "Li2S5-based ternary-salt electrolyte for robust lithium metal anode",
+  "first_author": "Zhao",
+  "journal": "Energy Storage Mater.",
+  "year": 2016,
+  "doi": "10.1016/j.ensm.2016.01.007",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 12,
+  "title": "A Concentrated Ternary-Salts Electrolyte for High Reversible Li Metal Battery with Slight Excess Li",
+  "first_author": "Qiu",
+  "journal": "Adv. Energy Mater.",
+  "year": 2019,
+  "doi": "10.1002/aenm.201803372",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 13,
+  "title": "High-Efficiency Lithium Metal Batteries with Fire-Retardant Electrolytes",
+  "first_author": "Chen",
+  "journal": "Joule",
+  "year": 2018,
+  "doi": "10.1016/j.joule.2018.05.002",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 14,
+  "title": "Lithium Difluorophosphate as a Dendrite-Suppressing Additive for Lithium Metal Batteries",
+  "first_author": "Shi",
+  "journal": "ACS Appl. Mater. Interfaces",
+  "year": 2018,
+  "doi": "10.1021/acsami.8b05185",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 15,
+  "title": "Fluoroethylene Carbonate Additives to Render Uniform Li Deposits in Lithium Metal Batteries",
+  "first_author": "Zhang",
+  "journal": "Adv. Funct. Mater.",
+  "year": 2017,
+  "doi": "10.1002/adfm.201605989",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 16,
+  "title": "(CH3)3Si-N[(FSO2)(n-C4F9SO2)]: An additive for dendrite-free lithium metal anode",
+  "first_author": "Tong",
+  "journal": "J. Power Sources",
+  "year": 2018,
+  "doi": "10.1016/j.jpowsour.2018.08.007",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 17,
+  "title": "Stable cycling of high-voltage lithium metal batteries in ether electrolytes",
+  "first_author": "Jiao",
+  "journal": "Nature Energy",
+  "year": 2018,
+  "doi": "10.1038/s41560-018-0199-8",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 18,
+  "title": "High rate and stable cycling of lithium metal anode",
+  "first_author": "Qian",
+  "journal": "Nature Communications",
+  "year": 2015,
+  "doi": "10.1038/ncomms7362",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 19,
+  "title": "Enhancing metallic lithium battery performance by tuning the electrolyte solution structure",
+  "first_author": "Huang",
+  "journal": "J. Mater. Chem. A",
+  "year": 2018,
+  "doi": "10.1039/c7ta08274f",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 20,
+  "title": "Concentrated dual-salt electrolytes for improving the cycling stability of lithium metal anodes",
+  "first_author": "Liu",
+  "journal": "Chin. Phys. B",
+  "year": 2016,
+  "doi": "10.1088/1674-1056/25/7/078203",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 21,
+  "title": "A promising bulky anion based lithium borate salt for lithium metal batteries",
+  "first_author": "Qiao",
+  "journal": "Chem. Sci.",
+  "year": 2018,
+  "doi": "10.1039/c8sc00041g",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 22,
+  "title": "Electrolyte design for Li metal-free Li batteries",
+  "first_author": "Chen",
+  "journal": "Mater. Today",
+  "year": 2020,
+  "doi": "10.1016/j.mattod.2020.04.004",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 23,
+  "title": "High-Voltage Lithium-Metal Batteries Enabled by Localized High-Concentration Electrolytes",
+  "first_author": "Chen",
+  "journal": "Adv. Mater.",
+  "year": 2018,
+  "doi": "10.1002/adma.201706102",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 24,
+  "title": "Lithium Nitrate Regulated Sulfone Electrolytes for Lithium Metal Batteries",
+  "first_author": "Fu",
+  "journal": "Angew. Chem. Int. Ed.",
+  "year": 2020,
+  "doi": "10.1002/anie.202009575",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 25,
+  "title": "Countersolvent Electrolytes for Lithium-Metal Batteries",
+  "first_author": "Piao",
+  "journal": "Adv. Energy Mater.",
+  "year": 2020,
+  "doi": "10.1002/aenm.201903568",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 26,
+  "title": "Novel Concentrated Li[(FSO2)(n-C4F9SO2)N]-Based Ether Electrolyte for Superior Stability of Metallic Lithium Anode",
+  "first_author": "Fang",
+  "journal": "ACS Appl. Mater. Interfaces",
+  "year": 2017,
+  "doi": "10.1021/acsami.6b03857",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 27,
+  "title": "Interface chemistry of an amide electrolyte for highly reversible lithium metal batteries",
+  "first_author": "Wang",
+  "journal": "Nature Communications",
+  "year": 2020,
+  "doi": "10.1038/s41467-020-17976-x",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 28,
+  "title": "High-Energy Rechargeable Metallic Lithium Battery at −70 °C Enabled by a Cosolvent Electrolyte",
+  "first_author": "Dong",
+  "journal": "Angew. Chem. Int. Ed.",
+  "year": 2019,
+  "doi": "10.1002/anie.201900266",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 29,
+  "title": "High-Efficiency Lithium-Metal Anode Enabled by Liquefied Gas Electrolytes",
+  "first_author": "Yang",
+  "journal": "Joule",
+  "year": 2019,
+  "doi": "10.1016/j.joule.2019.07.012",
+  "metadata_from": "paper text",
+  "note": "The PDF is the correction notice for this article (DOI given is the notice's); no records were extracted from it."
+ },
+ {
+  "ref": 30,
+  "title": "Ultrahigh coulombic efficiency electrolyte enables Li||SPAN batteries with superior cycling performance",
+  "first_author": "Liu",
+  "journal": "Mater. Today",
+  "year": 2021,
+  "doi": "10.1016/j.mattod.2020.09.035",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 31,
+  "title": "Monolithic solid–electrolyte interphases formed in fluorinated orthoformate-based electrolytes minimize Li depletion and pulverization",
+  "first_author": "Cao",
+  "journal": "Nature Energy",
+  "year": 2019,
+  "doi": "10.1038/s41560-019-0464-5",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 32,
+  "title": "Enabling High-Voltage Lithium-Metal Batteries under Practical Conditions",
+  "first_author": "Ren",
+  "journal": "Joule",
+  "year": 2019,
+  "doi": "10.1016/j.joule.2019.05.006",
+  "metadata_from": "paper text",
+  "note": "Same PDF as Ref. 67. The two extraction runs returned different records."
+ },
+ {
+  "ref": 33,
+  "title": "All-temperature batteries enabled by fluorinated electrolytes with non-polar solvents",
+  "first_author": "Fan",
+  "journal": "Nature Energy",
+  "year": 2019,
+  "doi": "10.1038/s41560-019-0474-3",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 34,
+  "title": "Effect of vinylene carbonate as additive to electrolyte for lithium metal anode",
+  "first_author": "Ota",
+  "journal": "Electrochim. Acta",
+  "year": 2004,
+  "doi": "10.1016/j.electacta.2003.09.010",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 35,
+  "title": "Impedance spectroscopy of lithium electrodes: Part 1. General behavior in propylene carbonate solutions and the correlation to surface chemistry and cycling efficiency",
+  "first_author": "Aurbach",
+  "journal": "J. Electroanal. Chem.",
+  "year": 1993,
+  "doi": "10.1016/0022-0728(93)80129-6",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 36,
+  "title": "Enabling reliable lithium metal batteries by a bifunctional anionic electrolyte additive",
+  "first_author": "Ma",
+  "journal": "Energy Storage Mater.",
+  "year": 2018,
+  "doi": "10.1016/j.ensm.2017.10.015",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 37,
+  "title": "Lithium difluoro(oxalato)borate: A promising salt for lithium metal based secondary batteries?",
+  "first_author": "Schedlbauer",
+  "journal": "Electrochim. Acta",
+  "year": 2013,
+  "doi": "10.1016/j.electacta.2013.01.023",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 38,
+  "title": "Self-leveling electrolyte enabled dendrite-free lithium deposition for safer and stable lithium metal batteries",
+  "first_author": "Xu",
+  "journal": "Chem. Eng. J.",
+  "year": 2021,
+  "doi": "10.1016/j.cej.2021.129494",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 39,
+  "title": "Nitrate Additives Coordinated with Crown Ether Stabilize Lithium Metal Anodes in Carbonate Electrolyte",
+  "first_author": "Gu",
+  "journal": "Adv. Funct. Mater.",
+  "year": 2021,
+  "doi": "10.1002/adfm.202102128",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 40,
+  "title": "Importance of Oxygen in the Metal-Free Catalytic Growth of Single-Walled Carbon Nanotubes from SiOx by a Vapor–Solid–Solid Mechanism",
+  "first_author": "Liu",
+  "journal": "J. Am. Chem. Soc.",
+  "year": 2011,
+  "doi": "10.1021/ja107855q",
+  "metadata_from": "paper text",
+  "note": "Not an electrolyte paper (carbon nanotube growth); no records were extracted from it."
+ },
+ {
+  "ref": 41,
+  "title": "Dissolution–Precipitation Dynamics in Ester Electrolyte for High-Stability Lithium Metal Batteries",
+  "first_author": "Yang",
+  "journal": "ACS Energy Lett.",
+  "year": 2021,
+  "doi": "10.1021/acsenergylett.1c00149",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 42,
+  "title": "A New Class of Ionically Conducting Fluorinated Ether Electrolytes with High Electrochemical Stability",
+  "first_author": "Amanchukwu",
+  "journal": "J. Am. Chem. Soc.",
+  "year": 2020,
+  "doi": "10.1021/jacs.9b11056",
+  "metadata_from": "paper text",
+  "note": "Same PDF as Ref. 45. The two extraction runs returned different records."
+ },
+ {
+  "ref": 43,
+  "title": "Regulation of SEI Formation by Anion Receptors to Achieve Ultra-Stable Lithium-Metal Batteries",
+  "first_author": "Huang",
+  "journal": "Angew. Chem. Int. Ed.",
+  "year": 2021,
+  "doi": "10.1002/anie.202104671",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 44,
+  "title": "Effects of fluorinated solvents on electrolyte solvation structures and electrode/electrolyte interphases for lithium metal batteries",
+  "first_author": "Cao",
+  "journal": "PNAS",
+  "year": 2021,
+  "doi": "10.1073/pnas.2020357118",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 45,
+  "title": "A New Class of Ionically Conducting Fluorinated Ether Electrolytes with High Electrochemical Stability",
+  "first_author": "Amanchukwu",
+  "journal": "J. Am. Chem. Soc.",
+  "year": 2020,
+  "doi": "10.1021/jacs.9b11056",
+  "metadata_from": "paper text",
+  "note": "Same PDF as Ref. 42. The two extraction runs returned different records."
+ },
+ {
+  "ref": 46,
+  "title": "Revisiting the designing criteria of advanced solid electrolyte interphase on lithium metal anode under practical condition",
+  "first_author": "Yuan",
+  "journal": "Nano Energy",
+  "year": 2021,
+  "doi": "10.1016/j.nanoen.2021.105847",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 47,
+  "title": "Fluorine-donating electrolytes enable highly reversible 5-V-class Li metal batteries",
+  "first_author": "Suo",
+  "journal": "PNAS",
+  "year": 2018,
+  "doi": "10.1073/pnas.1712895115",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 48,
+  "title": "Rapid Interfacial Exchange of Li Ions Dictates High Coulombic Efficiency in Li Metal Anodes",
+  "first_author": "May",
+  "journal": "ACS Energy Lett.",
+  "year": 2021,
+  "doi": "10.1021/acsenergylett.1c00112",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 49,
+  "title": "Solvent Molecule Cooperation Enhancing Lithium Metal Battery Performance at Both Electrodes",
+  "first_author": "Zhang",
+  "journal": "Angew. Chem. Int. Ed.",
+  "year": 2020,
+  "doi": "10.1002/anie.202000023",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 50,
+  "title": "Long-Term Stable Lithium Metal Anode in Highly Concentrated Sulfolane-Based Electrolytes with Ultrafine Porous Polyimide Separator",
+  "first_author": "Maeyoshi",
+  "journal": "ACS Appl. Mater. Interfaces",
+  "year": 2019,
+  "doi": "10.1021/acsami.9b05257",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 51,
+  "title": "High-Efficiency Lithium Metal Anode Enabled by a Concentrated/Fluorinated Ester Electrolyte",
+  "first_author": "Chen",
+  "journal": "ACS Appl. Mater. Interfaces",
+  "year": 2020,
+  "doi": "10.1021/acsami.0c06930",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 52,
+  "title": "Highly Fluorinated Interphases Enable High-Voltage Li-Metal Batteries",
+  "first_author": "Fan",
+  "journal": "Chem",
+  "year": 2018,
+  "doi": "10.1016/j.chempr.2017.10.017",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 53,
+  "title": "An All-Fluorinated Ester Electrolyte for Stable High-Voltage Li Metal Batteries Capable of Ultra-Low-Temperature Operation",
+  "first_author": "Holoubek",
+  "journal": "ACS Energy Lett.",
+  "year": 2020,
+  "doi": "10.1021/acsenergylett.0c00643",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 54,
+  "title": "Competitive Solvation Enhanced Stability of Lithium Metal Anode in Dual-Salt Electrolyte",
+  "first_author": "Zhang",
+  "journal": "Nano Lett.",
+  "year": 2021,
+  "doi": "10.1021/acs.nanolett.1c00848",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 55,
+  "title": "FSI-inspired solvent and “full fluorosulfonyl” electrolyte for 4 V class lithium-metal batteries",
+  "first_author": "Xue",
+  "journal": "Energy Environ. Sci.",
+  "year": 2020,
+  "doi": "10.1039/c9ee02538c",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 56,
+  "title": "Bisalt ether electrolytes: a pathway towards lithium metal batteries with Ni-rich cathodes",
+  "first_author": "Alvarado",
+  "journal": "Energy Environ. Sci.",
+  "year": 2019,
+  "doi": "10.1039/c8ee02601g",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 57,
+  "title": "Localized High-Concentration Sulfone Electrolytes for High-Efficiency Lithium-Metal Batteries",
+  "first_author": "Ren",
+  "journal": "Chem",
+  "year": 2018,
+  "doi": "10.1016/j.chempr.2018.05.002",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 58,
+  "title": "A Localized High-Concentration Electrolyte with Optimized Solvents and Lithium Difluoro(oxalate)borate Additive for Stable Lithium Metal Batteries",
+  "first_author": "Yu",
+  "journal": "ACS Energy Lett.",
+  "year": 2018,
+  "doi": "10.1021/acsenergylett.8b00935",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 59,
+  "title": "High-Power Lithium Metal Batteries Enabled by High-Concentration Acetonitrile-Based Electrolytes with Vinylene Carbonate Additive",
+  "first_author": "Peng",
+  "journal": "Adv. Funct. Mater.",
+  "year": 2020,
+  "doi": "10.1002/adfm.202001285",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 60,
+  "title": "Effects of Concentrated Salt and Resting Protocol on Solid Electrolyte Interface Formation for Improved Cycle Stability of Anode-Free Lithium Metal Batteries",
+  "first_author": "Beyene",
+  "journal": "ACS Appl. Mater. Interfaces",
+  "year": 2019,
+  "doi": "10.1021/acsami.9b09551",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 61,
+  "title": "Tailoring electrolyte solvation for Li metal batteries cycled at ultra-low temperature",
+  "first_author": "Holoubek",
+  "journal": "Nature Energy",
+  "year": 2021,
+  "doi": "10.1038/s41560-021-00783-z",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 62,
+  "title": "Rational solvent molecule tuning for high-performance lithium metal battery electrolytes",
+  "first_author": "Yu",
+  "journal": "Nature Energy",
+  "year": 2022,
+  "doi": "10.1038/s41560-021-00962-y",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 63,
+  "title": "Steric Effect Tuned Ion Solvation Enabling Stable Cycling of High-Voltage Lithium Metal Battery",
+  "first_author": "Chen",
+  "journal": "J. Am. Chem. Soc.",
+  "year": 2021,
+  "doi": "10.1021/jacs.1c09006",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 64,
+  "title": "Role of inner solvation sheath within salt–solvent complexes in tailoring electrode/electrolyte interphases for lithium metal batteries",
+  "first_author": "Ren",
+  "journal": "PNAS",
+  "year": 2020,
+  "doi": "10.1073/pnas.2010852117",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 65,
+  "title": "Non-flammable electrolyte enables Li-metal batteries with aggressive cathode chemistries",
+  "first_author": "Fan",
+  "journal": "Nature Nanotechnology",
+  "year": 2018,
+  "doi": "10.1038/s41565-018-0183-2",
+  "metadata_from": "web search"
+ },
+ {
+  "ref": 66,
+  "title": "Stable Li Metal Anode with “Ion–Solvent-Coordinated” Nonflammable Electrolyte for Safe Li Metal Batteries",
+  "first_author": "Xiao",
+  "journal": "ACS Energy Lett.",
+  "year": 2019,
+  "doi": "10.1021/acsenergylett.8b02527",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 67,
+  "title": "Enabling High-Voltage Lithium-Metal Batteries under Practical Conditions",
+  "first_author": "Ren",
+  "journal": "Joule",
+  "year": 2019,
+  "doi": "10.1016/j.joule.2019.05.006",
+  "metadata_from": "paper text",
+  "note": "Same PDF as Ref. 32. The two extraction runs returned different records."
+ },
+ {
+  "ref": 68,
+  "title": "Fluorobenzene, A Low-Density, Economical, and Bifunctional Hydrocarbon Cosolvent for Practical Lithium Metal Batteries",
+  "first_author": "Jiang",
+  "journal": "Adv. Funct. Mater.",
+  "year": 2021,
+  "doi": "10.1002/adfm.202005991",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 69,
+  "title": "Wide temperature cycling of Li-metal batteries with hydrofluoroether dilution of high-concentration electrolyte",
+  "first_author": "Park",
+  "journal": "Chem. Eng. J.",
+  "year": 2022,
+  "doi": "10.1016/j.cej.2021.131889",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 70,
+  "title": "Liquefied gas electrolytes for wide-temperature lithium metal batteries",
+  "first_author": "Yang",
+  "journal": "Energy Environ. Sci.",
+  "year": 2020,
+  "doi": "10.1039/d0ee01446j",
+  "metadata_from": "paper text"
+ },
+ {
+  "ref": 71,
+  "title": "Dual-Solvent Li-Ion Solvation Enables High-Performance Li-Metal Batteries",
+  "first_author": "Wang",
+  "journal": "Adv. Mater.",
+  "year": 2021,
+  "doi": "10.1002/adma.202008619",
+  "metadata_from": "paper text"
+ }
+]

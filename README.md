@@ -13,10 +13,17 @@ Advanced Chatbot for Lithium Battery Q/A
 
 ## Features
 - **Two answers to every question, side by side:** a knowledge-graph answer (the LLM writes Cypher, Neo4j returns ranked Coulombic efficiency facts with their source papers) and a retrieval-augmented LLM answer that cites the passages it used
-- **Result graph:** the electrolytes in the answer with their salts, solvents and papers, read from Neo4j; papers the LLM answer quoted are highlighted
-- **Cross-check:** each graph fact is checked against the retrieved passages, and the page shows which CE values appear in the source text
+- **Every number traced to its paper:** each extracted CE value is matched against its own paper's text. The page shows the passage and page it came from, or flags the value for checking by hand (117 found in the text, 24 in tables, 9 not found)
+- **Data view:** all 167 records, filterable by salt, solvent, CE and source, with a CE-by-salt chart on a log scale. Each record opens with its source passage, its paper (title, journal, DOI link, citation), the paper's other records and similar electrolytes from other papers
+- **Compare:** pick records and see them side by side, with CE on one scale and a composition matrix, then ask the LLM to explain the differences
+- **Export:** records and answer rows as CSV, and an answer with its references as Markdown
+- **Result graph:** the electrolytes in the answer with their salts, solvents and papers, read from Neo4j; papers the LLM answer quoted are highlighted, and every node opens its record or paper
+- **Cross-check:** each graph fact is checked against the retrieved passages
+- **How it works:** the pipeline with real counts, how far the numbers can be trusted, known limitations, and how to rebuild everything
 - **Pick the model per question:** any OpenAI or Anthropic model listed in `LLM_MODELS`, for example GPT-4 Turbo or Claude Opus 5.5
-- **Demo mode** (`?demo`): runs without the server, on the 167 records extracted from the papers in `database/extracted_info/`, with recorded LLM answers for the example questions
+- **Demo mode** (`?demo`): runs without the server, on the records extracted from the papers in `database/extracted_info/`, with recorded LLM answers for the example questions
+
+![Data view: CE by salt and the record table](docs/ui-data.png)
 
 ## Installation
 
@@ -64,6 +71,14 @@ python check_live.py
 
 It also flags a graph built by the earlier `build_kg.ipynb`, which loaded every record twice and linked electrolytes to other papers that share their name. Rebuild the graph with the current notebook if it reports either.
 
+## Reproducing
+
+[REPRODUCE.md](REPRODUCE.md) rebuilds everything step by step, from the stored extractions to a live server, and says what each step should print. The first step needs only Python:
+
+python scripts/export_records.py
+
+It regenerates `src/data/records.json` and `src/data/papers.json`. These hold every record with the passage and page where its CE value appears in the paper, and each paper's title and DOI (`database/papers.json`).
+
 ## Demo video
 
 `video.html` is a motion-design walkthrough built from the real extraction results: open [http://localhost:5173/video.html](http://localhost:5173/video.html) while `npm run dev` is running (`?t=20` freezes one moment). To render it to MP4 (needs Playwright and ffmpeg):
@@ -108,7 +123,7 @@ Code Style
 Please follow the existing code style and formatting conventions when making changes to the codebase. If you're unsure about the style, feel free to ask for guidance.
 
 ## Errata
-The LithiumMind write-up in the hackathon report ([arXiv:2411.15221](https://arxiv.org/abs/2411.15221)) gives 334 CE–electrolyte pairs extracted from 71 papers. That number matches the output of the record loader in `build_kg.ipynb`, which added every extracted record twice. The files in `database/extracted_info/` hold 167 records (164 unique, 147 with a CE value). The loader is now fixed, so a knowledge graph built from this repository no longer gets duplicate electrolyte nodes. The 46 matches with the original dataset reported in the write-up have not been rechecked.
+The LithiumMind write-up in the hackathon report ([arXiv:2411.15221](https://arxiv.org/abs/2411.15221)) gives 334 CE–electrolyte pairs extracted from 71 papers. That number matches the output of the record loader in `build_kg.ipynb`, which added every extracted record twice. The files in `database/extracted_info/` hold 167 records (164 unique, 147 with a CE value). The loader is now fixed, so a knowledge graph built from this repository no longer gets duplicate electrolyte nodes. The 46 matches with the original dataset reported in the write-up have not been rechecked. The 71 PDFs also hold 69 distinct papers: Refs. 32 and 67 are the same paper, as are Refs. 42 and 45, and their two extraction runs returned different records.
 
 ## License
 MIT

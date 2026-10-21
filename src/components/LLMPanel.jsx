@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { enter } from '../lib/motion';
 import { MAX_SOURCES } from '../lib/reveal';
 import { modelLabel } from '../lib/models';
+import { paperShort } from '../lib/data';
 import { SparkIcon } from './Icons';
 import { Label, Panel } from './Panel';
 
@@ -31,7 +32,7 @@ function StreamedAnswer({ text, k }) {
     budget -= s.length;
   }
   return (
-    <p className="text-[15px] leading-[1.75] text-ink-100">
+    <p className="text-[16px] leading-[1.75] text-ink-100">
       {out}
       {k < 1 && <span className="ml-0.5 inline-block h-[1.05em] w-[7px] translate-y-[3px] rounded-[1px] bg-llm" />}
     </p>
@@ -51,7 +52,7 @@ function Passage({ text }) {
   );
 }
 
-export function LLMPanel({ result, reveal, style }) {
+export function LLMPanel({ result, reveal, style, onOpen }) {
   return (
     <Panel
       accent="llm"
@@ -64,7 +65,7 @@ export function LLMPanel({ result, reveal, style }) {
       {result.llmAnswer ? (
         <StreamedAnswer text={result.llmAnswer} k={reveal.llm} />
       ) : (
-        <p className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-[13.5px] leading-relaxed text-ink-300">
+        <p className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-[14.5px] leading-relaxed text-ink-300">
           {result.llmNote || 'The LLM returned no answer.'}
         </p>
       )}
@@ -76,18 +77,28 @@ export function LLMPanel({ result, reveal, style }) {
           <ul className="space-y-2">
             {result.sources.slice(0, MAX_SOURCES).map((s, i) => (
               <li key={i} style={enter(reveal.sources[i], 8)} className="flex gap-3 rounded-xl border border-white/[0.06] bg-white/[0.02] px-3 py-2.5">
-                <span className="mt-0.5 h-fit shrink-0 whitespace-nowrap rounded-md bg-llm/15 px-1.5 py-0.5 font-mono text-[10.5px] text-llm-soft">
+                <button
+                  type="button"
+                  onClick={() => onOpen({ type: 'paper', ref: s.ref })}
+                  disabled={!onOpen || s.ref == null}
+                  title={s.ref == null ? undefined : paperShort(s.ref)}
+                  className="mt-0.5 h-fit shrink-0 whitespace-nowrap rounded-md bg-llm/15 px-1.5 py-0.5 font-mono text-[11.5px] text-llm-soft transition enabled:hover:bg-llm/30"
+                >
                   Ref. {s.ref ?? '?'}
-                </span>
-                <p className="line-clamp-2 text-[12.5px] leading-relaxed text-ink-300">
-                  <Passage text={s.text} />
-                  {s.page != null && <span className="text-ink-500"> · p.{s.page}</span>}
-                </p>
+                </button>
+                <div className="min-w-0">
+                  <div className="truncate text-[12.5px] text-ink-500">
+                    {[s.ref != null && paperShort(s.ref), s.page != null && `p.${s.page}`].filter(Boolean).join(' · ')}
+                  </div>
+                  <p className="line-clamp-2 text-[13.5px] leading-relaxed text-ink-300">
+                    <Passage text={s.text} />
+                  </p>
+                </div>
               </li>
             ))}
           </ul>
           {result.sources.length > MAX_SOURCES && (
-            <p className="mt-2 font-mono text-[11px] text-ink-500">+{result.sources.length - MAX_SOURCES} more passages used for the cross-check</p>
+            <p className="mt-2 font-mono text-[12px] text-ink-500">+{result.sources.length - MAX_SOURCES} more passages used for the cross-check</p>
           )}
         </div>
       )}

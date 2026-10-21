@@ -12,7 +12,7 @@ export function PipelineSteps({ active, done, elapsed = 0 }) {
           <li key={label} className="flex items-center gap-2">
             {i > 0 && <span className={`h-px w-6 ${state === 'todo' ? 'bg-white/10' : 'bg-kg/50'}`} />}
             <span
-              className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11.5px] ${
+              className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12.5px] ${
                 state === 'done'
                   ? 'border-kg/25 bg-kg/10 text-kg-soft'
                   : state === 'active'

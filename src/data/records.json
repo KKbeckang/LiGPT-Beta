@@ -1,0 +1,5095 @@
+[
+ {
+  "id": "1-1",
+  "ref": 1,
+  "ce": 95.4,
+  "salts": [
+   {
+    "name": "LiDFP",
+    "mol": 0.1
+   },
+   {
+    "name": "LiBOB",
+    "mol": 0.4
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.3
+   },
+   {
+    "name": "DMC",
+    "frac": 0.7
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiDFP",
+    "LiBOB",
+    "EC"
+   ],
+   "text": "\u2026LiDFP\u2013LiTFSI electrolytes, respectively. The capacity retention of Li||LiFePO 4 cells using the LiDFP\u2013LiBOB electrolyte reaches 95.4% along with a CE over 99.8% after 300 cycles at a current density of 2.0 mA cm\u22122 and the capacity reaches 103.7 mAh g\u22121 at a\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "1-2",
+  "ref": 1,
+  "ce": 94.9,
+  "salts": [
+   {
+    "name": "LiDFP",
+    "mol": 0.1
+   },
+   {
+    "name": "LiFSI",
+    "mol": 0.4
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.3
+   },
+   {
+    "name": "DMC",
+    "frac": 0.7
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [
+    "EC"
+   ],
+   "text": "\u2026slightly capacity loss is observed. The capacity reten-tion of cells using D4B, D4F and D4T electrolytes is increased to 95.4%, 94.9%, and 90.7%,",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "1-3",
+  "ref": 1,
+  "ce": 90.7,
+  "salts": [
+   {
+    "name": "LiDFP",
+    "mol": 0.1
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 0.4
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.3
+   },
+   {
+    "name": "DMC",
+    "frac": 0.7
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [
+    "EC"
+   ],
+   "text": "\u2026loss is observed. The capacity reten-tion of cells using D4B, D4F and D4T electrolytes is increased to 95.4%, 94.9%, and 90.7%,",
+   "match": [
+    122,
+    126
+   ]
+  }
+ },
+ {
+  "id": "2-1",
+  "ref": 2,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "PC",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "3-1",
+  "ref": 3,
+  "ce": 99.52,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FDMB",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI",
+    "FDMB"
+   ],
+   "text": "\u2026endows Li metal with an ultrathin SEI (~6 nm) observed by cryogenic transmission electron microscopy (cryo-TEM) and high CE (~99.52%) along with a fast activation process (CE > 99% within five cycles), but also achieves >6 V oxidative stability. The\u2026",
+   "match": [
+    127,
+    132
+   ]
+  }
+ },
+ {
+  "id": "3-2",
+  "ref": 3,
+  "ce": 97.7,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMB",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiFSI",
+    "DMB"
+   ],
+   "text": "\u2026Time (h)10 20 30 40 50 60 70 80 90 20 401 M LiFSI/FDMB 1 M LiFSI/DMB 1 M LiFSI/DME1 M LiFSI/FDMB1 M LiFSI/DMB1 M LiFSI/DME 99.52%97.7%98.4%CE 50 Fig. 1 | Design concepts and electrochemical stability of electrolytes studied in this work. a\u2013c, Design scheme and\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "3-3",
+  "ref": 3,
+  "ce": 98.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026(h)10 20 30 40 50 60 70 80 90 20 401 M LiFSI/FDMB 1 M LiFSI/DMB 1 M LiFSI/DME1 M LiFSI/FDMB1 M LiFSI/DMB1 M LiFSI/DME 99.52%97.7%98.4%CE 50 Fig. 1 | Design concepts and electrochemical stability of electrolytes studied in this work. a\u2013c, Design scheme and\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "4-1",
+  "ref": 4,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiPO2F2",
+    "mol": 1.0
+   },
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "5-1",
+  "ref": 5,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.5
+   },
+   {
+    "name": "FDMB",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "6-1",
+  "ref": 6,
+  "ce": 98.34,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.4
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.6
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [],
+   "text": "\u2026with the 95:5 electrolyte was aggravated only within 36 cycles, while 250 cycles of galvanostatic cycling and high average CE (98.34%) were achieved with the 40:60 elec- trolyte. The galvanostatic operations revealed that the LiNO 3 addition significantly\u2026",
+   "match": [
+    128,
+    133
+   ]
+  }
+ },
+ {
+  "id": "6-2",
+  "ref": 6,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.95
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.05
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "6-3",
+  "ref": 6,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.8
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "6-4",
+  "ref": 6,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.6
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.4
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "7-1",
+  "ref": 7,
+  "ce": 98.1,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.6
+   },
+   {
+    "name": "LiBOB",
+    "mol": 0.4
+   },
+   {
+    "name": "LiPF6",
+    "mol": 0.05
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.7
+   },
+   {
+    "name": "EMC",
+    "frac": 0.3
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiTFSI",
+    "LiBOB",
+    "EC",
+    "EMC"
+   ],
+   "text": "\u2026the combination of all three additives of LiPF 6, VC, and FEC leads the electrolyte to have the highest Li CE value of 98.1%. The results indicate that the combinational use of effective additives could largely improve the Li CE in these electrolytes.\u2026",
+   "match": [
+    120,
+    124
+   ]
+  }
+ },
+ {
+  "id": "7-2",
+  "ref": 7,
+  "ce": 97.2,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.6
+   },
+   {
+    "name": "LiBOB",
+    "mol": 0.4
+   },
+   {
+    "name": "LiPF6",
+    "mol": 0.05
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.4
+   },
+   {
+    "name": "EMC",
+    "frac": 0.6
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "LiBOB",
+    "EC",
+    "EMC"
+   ],
+   "text": "\u2026CE value for the electrolyte with the combinational additives of LiPF 6, VC, and FEC is the highest, but with EC/EMC of 4:6 is 97.2%, lower than that with EC/EMC of 7:3 (98.1%), which corroborates that the solvent optimization is favorable for improving the Li\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "8-1",
+  "ref": 8,
+  "ce": 94.8,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 2.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TEP",
+    "frac": 0.67
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "TEP"
+   ],
+   "text": "\u2026cycle 100th cycle 0.0 0.2 0.4 0.6 0.8 1.0 Capacity (mAh cm\u20132)Voltage (V vs Li/Li+)Coulombic efficiency (%)18%1:5 1:3 1:2 84% 94.8% 1:2 LiFSI-TEPVoltage (V vs Li/Li+) Fig. 3 | Optical and SeM images of the Li-metal plating, and electrochemical performance of\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "8-2",
+  "ref": 8,
+  "ce": 84.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TEP",
+    "frac": 0.75
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "TEP"
+   ],
+   "text": "\u202620th cycle 100th cycle 0.0 0.2 0.4 0.6 0.8 1.0 Capacity (mAh cm\u20132)Voltage (V vs Li/Li+)Coulombic efficiency (%)18%1:5 1:3 1:2 84% 94.8% 1:2 LiFSI-TEPVoltage (V vs Li/Li+) Fig. 3 | Optical and SeM images of the Li-metal plating, and electrochemical\u2026",
+   "match": [
+    127,
+    130
+   ]
+  }
+ },
+ {
+  "id": "8-3",
+  "ref": 8,
+  "ce": 18.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TEP",
+    "frac": 0.83
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "TEP"
+   ],
+   "text": "\u20260.2 0.01st cycle 20th cycle 100th cycle 0.0 0.2 0.4 0.6 0.8 1.0 Capacity (mAh cm\u20132)Voltage (V vs Li/Li+)Coulombic efficiency (%)18%1:5 1:3 1:2 84% 94.8% 1:2 LiFSI-TEPVoltage (V vs Li/Li+) Fig. 3 | Optical and SeM images of the Li-metal plating, and\u2026",
+   "match": [
+    129,
+    132
+   ]
+  }
+ },
+ {
+  "id": "9-1",
+  "ref": 9,
+  "ce": 98.8,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.3
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.33
+   },
+   {
+    "name": "GBL",
+    "frac": 0.67
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [
+    "LiFSI",
+    "FEC",
+    "GBL"
+   ],
+   "text": "COMMUNICATION to 98.8% (Figure 4c) . By contrast, the cell without LiNO 3 demonstrates only 120 cycles and lower CE. More importantly, the cycling\u2026",
+   "match": [
+    17,
+    21
+   ]
+  }
+ },
+ {
+  "id": "10-1",
+  "ref": 10,
+  "ce": 98.3,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.5
+   },
+   {
+    "name": "TFEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "FEC",
+    "TFEC"
+   ],
+   "text": "\u2026Cu ||Li coin cells. A 1M LiPF 6FEC:TFEC \ufb02uorinated electrolyte demonstrated the best performance with coulombic ef\ufb01ciencies of 98.3% and 97.6% in the combinatorial cell(cyclic voltammetry) and coin cell (galvanostatic cycling) respectively, compared to only\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "11-1",
+  "ref": 11,
+  "ce": 99.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiTFSI",
+    "DOL",
+    "DME"
+   ],
+   "text": "\u2026s between polysulfide intermediates and Li metal anode by constructing a stable SE I layer, which leads to a high CE of ~99% [42-46]. Further researches indicate that the stable and dense SEI layer is generated by the synergetic reactions between\u2026",
+   "match": [
+    122,
+    125
+   ]
+  }
+ },
+ {
+  "id": "11-2",
+  "ref": 11,
+  "ce": 94.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   },
+   {
+    "name": "LiNO3",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiTFSI"
+   ],
+   "text": "\u2026Li 2S5-based ternary -salt electrolyte renders Li metal anode (1) dendrite -free morphology, (2) improve d Coulombic efficiency (94 % compared with 60 % in routine electrolyte), (3) suppressed polarization (26 mV at 5.0 mA cm-2 compared with 160 mV), and (4)\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "11-3",
+  "ref": 11,
+  "ce": 95.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   },
+   {
+    "name": "LiNO3",
+    "mol": null
+   },
+   {
+    "name": "Li2S5",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [
+    "LiTFSI",
+    "Li2S5",
+    "DOL",
+    "DME"
+   ],
+   "text": "\u2026it in one cycle. At the concentration of 0.1 0 M ([S]), Li 2S5 demonstrates the most superior cycling performance with a CE of 95 % . However, other polysulfides lead to huge efficiency decay and fluctuation, which may be induced by the unstable and rapid\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "12-1",
+  "ref": 12,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   },
+   {
+    "name": "LiNO3",
+    "mol": null
+   },
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiTFSI",
+    "LiFSI"
+   ],
+   "text": "\u20260.5 \u00d7 excess Li metal was applied, the average Coulombic efficiency in the ternary-salts electrolyte can be further improved to 99.4%. Li metal full-cell with only 0.44\u00d7 active excess Li was also studied, and a high cycling stability of more than 70 cycles was\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "12-2",
+  "ref": 12,
+  "ce": 99.8,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   },
+   {
+    "name": "LiNO3",
+    "mol": null
+   },
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiTFSI",
+    "LiFSI"
+   ],
+   "text": "\u2026high stability to the LiFePO 4 cathode, the capacity retention after 500 cycles is 92.0% and the Coulombic efficiency is 99.8%. A Li metal full-cell with only 0.44 \u00d7 excess Li is also assembled, it remains stable over 70 cycles and 83% of the initial\u2026",
+   "match": [
+    122,
+    126
+   ]
+  }
+ },
+ {
+  "id": "13-1",
+  "ref": 13,
+  "ce": 99.2,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TEP",
+    "frac": 0.25
+   },
+   {
+    "name": "BTFE",
+    "frac": 0.75
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 9,
+   "names": [
+    "LiFSI",
+    "TEP",
+    "BTFE"
+   ],
+   "text": "\u2026rdant LHCE (i.e., 1.2 M LiFSI/TEP-BTFE; 1:3 by mol) that enables dendrite-free and stable cycling of LMAs with high CE(up to 99.2%) and greatly enhances the cycling performance of Li jjNMC622 batteries (>97% capacity retention after 600 cycles at 1 C). The\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "14-1",
+  "ref": 14,
+  "ce": 95.2,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   },
+   {
+    "name": "LiDFP",
+    "mol": 0.15
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "LiDFP",
+    "EC",
+    "DEC"
+   ],
+   "text": "\u2026concen-tration of 0.15 M in the STD electrolyte is regarded as thehighest concentration in this work. The highest Li CE value of95.2% was obtained for the 0.15 M LiDFP containingelectrolyte, which is considered as the optimal electrolyte. In order to\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "15-1",
+  "ref": 15,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DEC",
+    "frac": 0.5
+   },
+   {
+    "name": "FEC",
+    "frac": 0.05
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "16-1",
+  "ref": 16,
+  "ce": 96.5,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiTFSI",
+    "DOL",
+    "DME"
+   ],
+   "text": "\u2026Li|Cu cells, with 1.0 M LiTFSI-DOL/DME (1:1, v/v) containing 5 wt% TMS-FNFSI, exhibit an average coulombic e\ufb03ciency up to 96.5%for ca. 100 cycles at the current density and areal capacity of 1 mA cm \u22122and 2 mAh cm\u22122, respectively. The Li|Li symmetric\u2026",
+   "match": [
+    123,
+    127
+   ]
+  }
+ },
+ {
+  "id": "16-2",
+  "ref": 16,
+  "ce": 85.17,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiTFSI",
+    "DOL",
+    "DME"
+   ],
+   "text": "\u2026of its excellent long-term cycling stability. At the \ufb01rst cycle, for the Li|LiFePO 4cells with TMS-FNFSI ( Fig. 7 b), the CE is 85.17%, which is a little higher than that without TMS-FNFSI (84.22%, Fig. 7a). Both Fig. 3. Cycling performances of Li|Cu cells at\u2026",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "17-1",
+  "ref": 17,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.5
+   },
+   {
+    "name": "TFEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "18-1",
+  "ref": 18,
+  "ce": 98.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 4.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026Cu|Li cells with this electrolyte could be stably cycled at a high rate of 4.0 mA cm/C02for41,000 cycles with a stable CE of 98.4%, as shown in Fig. 3d. Even at a very high rate of 10.0 mA cm/C02, a stable CE of 497% was maintained for 4500 cycles. The\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "18-2",
+  "ref": 18,
+  "ce": 99.1,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026for 4500 cycles. The average CE values over 500 Li plating/stripping cycles at current densities of 0.2 and 1.0 mA cm/C02are 99.1 and 98.5%, respectively. In sharp contrast, although a nodule-like structure was",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "19-1",
+  "ref": 19,
+  "ce": 99.2,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 6.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "HFME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 7,
+   "names": [
+    "LiTFSI",
+    "HFME"
+   ],
+   "text": "\ufffd\ufffdciency is 99.2%, which is further improved. Li \u2013S batteries in di \ufb00erent electrolytes a \ue09der 100 cycles are disassembled to determine the\u2026",
+   "match": [
+    12,
+    16
+   ]
+  }
+ },
+ {
+  "id": "19-2",
+  "ref": 19,
+  "ce": 99.22,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "HFME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "HFME"
+   ],
+   "text": "\u2026/C02for 500 cycles with a stable and high coulombic e \ufb03- ciency, and the average coulombic e \ufb03ciencies of Li|Cu cells are up to 99.22% and 99.46%, respectively. Moreover, the plating/ stripping voltage pro \ue103les show a decreased polarization for the cell in\u2026",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "19-3",
+  "ref": 19,
+  "ce": 99.46,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "HFME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "HFME"
+   ],
+   "text": "\u2026cycles with a stable and high coulombic e \ufb03- ciency, and the average coulombic e \ufb03ciencies of Li|Cu cells are up to 99.22% and 99.46%, respectively. Moreover, the plating/ stripping voltage pro \ue103les show a decreased polarization for the cell in PCE-LiFSI\u2026",
+   "match": [
+    128,
+    133
+   ]
+  }
+ },
+ {
+  "id": "20-1",
+  "ref": 20,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 2.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "20-2",
+  "ref": 20,
+  "ce": 98.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 2.0
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "LiTFSI"
+   ],
+   "text": "\u2026versus the amount of Li plated on the counter electrode during each cycle.[12]The average CEs of the Li |Cu cells were 98.7% and 98.6% after 200 cycles for the 1M LiFSI + 2M LiTFSI and 2M LiFSI + 1M LiTFSI electrolytes, respectively, at a current density of 0.5\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "20-3",
+  "ref": 20,
+  "ce": 91.7,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 3.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiTFSI"
+   ],
+   "text": "\u2026electrolytes, respectively, at a current density of 0.5 mA/cm2. In contrast, the 3M LiTFSI electrolyte shows a lower CE of 91.7% and appears \ufb02uctuation after 100 cycles (Fig. 3(a)). As shown in Fig. 3(b), at a higher current density of 1 mA/cm2, the 3M\u2026",
+   "match": [
+    124,
+    128
+   ]
+  }
+ },
+ {
+  "id": "20-4",
+  "ref": 20,
+  "ce": 94.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 2.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "LiTFSI"
+   ],
+   "text": "\u2026shows a much lower CE of less than 90%. However, the CE of cells with the dual-salt electrolyte (1M LiFSI + 2M LiTFSI) is still 94.6% after 100 cycles, and the CE of cells with dual-salt electrolyte (2M LiFSI + 1M LiTFSI) can even reach 97.7% after 200 cy- cles\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "20-5",
+  "ref": 20,
+  "ce": 97.7,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 2.0
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "LiTFSI"
+   ],
+   "text": "\u20262M LiTFSI) is still 94.6% after 100 cycles, and the CE of cells with dual-salt electrolyte (2M LiFSI + 1M LiTFSI) can even reach 97.7% after 200 cy- cles (Fig. 3(b)). It is obvious that the dual-salt systems show better performance than",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "21-1",
+  "ref": 21,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiTFPFB",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "PC",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 9,
+   "names": [
+    "LiTFPFB",
+    "PC"
+   ],
+   "text": "of the forth cycle discharge capacity after 500 cycles with the Coulombic efficiency of 99.5%, while the capacity retention of the LiBF 4 based cell is 89.2% with the Coulombic efficiency of 99.3%. These results indicate\u2026",
+   "match": [
+    88,
+    92
+   ]
+  }
+ },
+ {
+  "id": "21-2",
+  "ref": 21,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "PC",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 7,
+   "names": [
+    "PC"
+   ],
+   "text": "\u2026at a high current rate of 1 C (160 mA g-1). As shown in Figure 4b, after 200 cycles, the LiTFPFB based cell retains nearly 99.3% of its fourth cycle discharge capacity with a smaller overpotential of 0.1 V (Figure S9a), while the capacity retention of LiBF\u2026",
+   "match": [
+    124,
+    128
+   ]
+  }
+ },
+ {
+  "id": "22-1",
+  "ref": 22,
+  "ce": 99.83,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 2.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "THF",
+    "frac": 0.5
+   },
+   {
+    "name": "MTHF",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "THF"
+   ],
+   "text": "\u2026rich SEI on plated Li. Bi \u2013Gr substrate and 2.0 M LiPF 6\u2013mixTHF electrolyte enable the Li anodes to achieve a record high CE of 99.83% at a high capacity of 1.0 mAh cm/C02and current",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "23-1",
+  "ref": 23,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": 0.33
+   },
+   {
+    "name": "BTFE",
+    "frac": 0.67
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiFSI",
+    "DMC",
+    "BTFE"
+   ],
+   "text": "\u2026of 3.8\u20131.2 m, prepared by diluting the HCEs with various contents of BTFE, have demonstrated improved CEs from 99.3% to 99.5% (Figure 1c,d; Figure S2c,d, Sup- porting Information). The effects of current density on CE of LMAs were also studied using the\u2026",
+   "match": [
+    121,
+    125
+   ]
+  }
+ },
+ {
+  "id": "24-1",
+  "ref": 24,
+  "ce": 98.5,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 3.25
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [
+   {
+    "name": "SL",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiTFSI",
+    "SL"
+   ],
+   "text": "RESEARCH ARTICLE 3 over 100 cycles with a high average CE of 98.5% compared to 96.5% in the 3.25m LiTFSI - SL electrolyte. It is worth mentioning that a high CE of 98.5% can not be achieved by\u2026",
+   "match": [
+    61,
+    65
+   ]
+  }
+ },
+ {
+  "id": "24-2",
+  "ref": 24,
+  "ce": 97.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 3.35
+   }
+  ],
+  "solvents": [
+   {
+    "name": "SL",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiTFSI",
+    "SL"
+   ],
+   "text": "\u2026that a high CE of 98.5% can not be achieved by adding additional 0.1m LiTFSI to reach 3.35m ( Figure S 5). The average CE of 97.0% for the 3.35 m LiTFSI - SL electrolyte is only slightly higher than that in the 3.25m LiTFSI - SL electrolyte and much lower\u2026",
+   "match": [
+    126,
+    131
+   ]
+  }
+ },
+ {
+  "id": "24-3",
+  "ref": 24,
+  "ce": 99.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.3
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [
+   {
+    "name": "SL",
+    "frac": 0.98
+   },
+   {
+    "name": "HFE",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiTFSI",
+    "SL",
+    "HFE"
+   ],
+   "text": "\u2026electrolytes . After adding HFE antisolvent, 1.3m LiTFSI/LiNO 3 - SL/HFE electrolyte enabl es Li anode to achieve a high CE of 99.0 % and Li || NMC811 cells to provide a capacity retention rate of 99.5% at 0.5C for 200 cycles . The comprehensive molecular\u2026",
+   "match": [
+    128,
+    134
+   ]
+  }
+ },
+ {
+  "id": "25-1",
+  "ref": 25,
+  "ce": 98.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "TTE",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "DMC",
+    "TTE"
+   ],
+   "text": "\u2026cycles, but it begins to decay after 200 cycles. Notably, Li plating/stripping in T3 electrolyte achieves a high average CE of 98.6% in 400 cycles at a high current density of 1 mA cm \u22122 and a capacity of 1 mAh cm\u22122. It is worth noting that a high CE of 99%\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "26-1",
+  "ref": 26,
+  "ce": 97.0,
+  "salts": [
+   {
+    "name": "LiFNFSI",
+    "mol": 3.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFNFSI"
+   ],
+   "text": "\u2026Li |Li cells with concentrated LiFNFSI-based electrolyte have been demonstrated to display high average Coulombic e \ufb03ciency ( \u224897%) and excellent cycling stability (over 1,000 h) of metallic lithium anodes, compared to concentrated lithium bis(tri\u2026",
+   "match": [
+    128,
+    131
+   ]
+  }
+ },
+ {
+  "id": "26-2",
+  "ref": 26,
+  "ce": 90.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 3.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiTFSI"
+   ],
+   "text": "\u2026a high average CE(\u224897%) over 180 cycles. In contrast, the average CE of the concentrated LiTFSI-based electrolyte is lower (<90%) andunstable, showing inferior cycling performance (<150 cycles).The cycling performances of the Li |Cu cells are consistent\u2026",
+   "match": [
+    126,
+    129
+   ]
+  }
+ },
+ {
+  "id": "27-1",
+  "ref": 27,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.5
+   },
+   {
+    "name": "FDMA",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiTFSI",
+    "FEC",
+    "FDMA"
+   ],
+   "text": "\u2026(FDMA: FEC, 1:1 by volume) was prepared to explore its performance in Li-metal batteries. A high Coulombic ef \ufb01ciency of ~99.3% is achieved for Li plating and stripping in Li||Cu cells, and stable Li plating/stripping is also observed during the prolonged\u2026",
+   "match": [
+    123,
+    127
+   ]
+  }
+ },
+ {
+  "id": "27-2",
+  "ref": 27,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "28-1",
+  "ref": 28,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 5.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EA",
+    "frac": 0.8
+   },
+   {
+    "name": "DCM",
+    "frac": 0.2
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "30-1",
+  "ref": 30,
+  "ce": 94.28,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "EC",
+    "DEC"
+   ],
+   "text": "\u2026method, which is described in detail in the experimental methods [25]. The 1 M LiFSI/EC-DEC (EC-DEC) electrolyte showed a CE of 94.28% at 1m Ac m /C02(Fig. 1 a), while the 1 M LiFSI/DOL-DME electrolyte delivered an improved CE of 98.69% at the same current\u2026",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "31-1",
+  "ref": 31,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.1
+   },
+   {
+    "name": "TFEO",
+    "frac": 0.9
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "32-1",
+  "ref": 32,
+  "ce": 99.1,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 9,
+   "names": [],
+   "text": "\u2026on the cell internal resistance. When HCE is used, however, a dramatically improved Li CE was observed, with anaverage CE > 99.1% over 220 cycles, along with stable voltage pro\ufb01les duringcycling. Unfortunately, Li CE \ufb02uctuations were more likely found\u2026",
+   "match": [
+    125,
+    129
+   ]
+  }
+ },
+ {
+  "id": "32-2",
+  "ref": 32,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 9,
+   "names": [],
+   "text": "\u2026miti- gated over extended cycles (over 300 cycles) when the LHCE is used while the average Li CE can be further improved to >99.3%. It indicates that compared tothe HCE, the LHCE with lower viscosity and better wettability can not only inducemore uniform Li\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "33-1",
+  "ref": 33,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.28
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.33
+   },
+   {
+    "name": "FEMC",
+    "frac": 0.33
+   },
+   {
+    "name": "D2",
+    "frac": 0.33
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "FEC",
+    "FEMC",
+    "D2"
+   ],
+   "text": "\u2026LiF-rich SEI on Li anodes in the 1.28 M LiFSI- FEC/FEMC\u2013D2 electrolytes significantly increases the Li plating/stripping CE to 99.4% (Supplementary Fig. 14), which is one of the highest CEs reported so far for Li plating/striping 34. Figure 4a\u2013e shows the\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "33-2",
+  "ref": 33,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 0.7
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.33
+   },
+   {
+    "name": "DEC",
+    "frac": 0.33
+   },
+   {
+    "name": "M3",
+    "frac": 0.33
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "34-1",
+  "ref": 34,
+  "ce": 60.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026using pressurized electrode cell Li salts Solvent Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC\u2026",
+   "match": [
+    130,
+    132
+   ]
+  }
+ },
+ {
+  "id": "34-2",
+  "ref": 34,
+  "ce": 57.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026pressurized electrode cell Li salts Solvent Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC\u2026",
+   "match": [
+    127,
+    129
+   ]
+  }
+ },
+ {
+  "id": "34-3",
+  "ref": 34,
+  "ce": 64.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026cell Li salts Solvent Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54\u2026",
+   "match": [
+    124,
+    126
+   ]
+  }
+ },
+ {
+  "id": "34-4",
+  "ref": 34,
+  "ce": 80.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026cell Li salts Solvent Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC\u2026",
+   "match": [
+    127,
+    129
+   ]
+  }
+ },
+ {
+  "id": "34-5",
+  "ref": 34,
+  "ce": 53.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82\u2026",
+   "match": [
+    124,
+    126
+   ]
+  }
+ },
+ {
+  "id": "34-6",
+  "ref": 34,
+  "ce": 95.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiPF6",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026Temperature (\u25e6C)Lithium cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC\u2026",
+   "match": [
+    127,
+    129
+   ]
+  }
+ },
+ {
+  "id": "34-7",
+  "ref": 34,
+  "ce": 82.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI\u2026",
+   "match": [
+    126,
+    128
+   ]
+  }
+ },
+ {
+  "id": "34-8",
+  "ref": 34,
+  "ce": 55.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026cycling ef\ufb01ciency VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC\u2026",
+   "match": [
+    129,
+    131
+   ]
+  }
+ },
+ {
+  "id": "34-9",
+  "ref": 34,
+  "ce": 62.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026VCfreeWith VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58\u2026",
+   "match": [
+    130,
+    132
+   ]
+  }
+ },
+ {
+  "id": "34-10",
+  "ref": 34,
+  "ce": 80.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026VC 2% LiPF6EC+DMC (1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58\u2026",
+   "match": [
+    122,
+    124
+   ]
+  }
+ },
+ {
+  "id": "34-11",
+  "ref": 34,
+  "ce": 40.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026(1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86\u2026",
+   "match": [
+    123,
+    125
+   ]
+  }
+ },
+ {
+  "id": "34-12",
+  "ref": 34,
+  "ce": 84.0,
+  "salts": [
+   {
+    "name": "LiBF4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBF4",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026(1:1) 0 60 57 EC+DMC (1:1) 25 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86\u2026",
+   "match": [
+    126,
+    128
+   ]
+  }
+ },
+ {
+  "id": "34-13",
+  "ref": 34,
+  "ce": 77.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u202625 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    125,
+    127
+   ]
+  }
+ },
+ {
+  "id": "34-14",
+  "ref": 34,
+  "ce": 54.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u202625 64 80 EC+DMC (1:1) 50 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-15",
+  "ref": 34,
+  "ce": 68.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u202650 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    125,
+    127
+   ]
+  }
+ },
+ {
+  "id": "34-16",
+  "ref": 34,
+  "ce": 82.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u202650 53 95 LiBF4EC+DMC (1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-17",
+  "ref": 34,
+  "ce": 72.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026(1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    126,
+    128
+   ]
+  }
+ },
+ {
+  "id": "34-18",
+  "ref": 34,
+  "ce": 91.0,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiTFSI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026(1:1) 0 82 55 EC+DMC (1:1) 25 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    129,
+    131
+   ]
+  }
+ },
+ {
+  "id": "34-19",
+  "ref": 34,
+  "ce": 73.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u202625 62 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-20",
+  "ref": 34,
+  "ce": 58.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u202662 80 EC+DMC (1:1) 50 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-21",
+  "ref": 34,
+  "ce": 72.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u202650 40 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-22",
+  "ref": 34,
+  "ce": 86.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u202640 84 LiTFSI EC +DMC (1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    128,
+    130
+   ]
+  }
+ },
+ {
+  "id": "34-23",
+  "ref": 34,
+  "ce": 66.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026(1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    126,
+    128
+   ]
+  }
+ },
+ {
+  "id": "34-24",
+  "ref": 34,
+  "ce": 90.0,
+  "salts": [
+   {
+    "name": "LiBETI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "VC",
+    "frac": 0.02
+   }
+  ],
+  "evidence": {
+   "status": "table",
+   "page": 3,
+   "names": [
+    "LiBETI",
+    "EC",
+    "DMC",
+    "VC"
+   ],
+   "text": "\u2026(1:1) 0 77 54 EC+DMC (1:1) 25 68 82 EC+DMC (1:1) 50 72 91 LiBETI EC +DMC (1:1) 0 73 58 EC+DMC (1:1) 25 72 86 EC+DMC (1:1) 50 66 90",
+   "match": [
+    129,
+    131
+   ]
+  }
+ },
+ {
+  "id": "35-1",
+  "ref": 35,
+  "ce": 82.0,
+  "salts": [
+   {
+    "name": "LiAsF6",
+    "mol": 0.5
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "35-2",
+  "ref": 35,
+  "ce": 85.0,
+  "salts": [
+   {
+    "name": "LiAsF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "35-3",
+  "ref": 35,
+  "ce": 90.0,
+  "salts": [
+   {
+    "name": "LiAsF6",
+    "mol": 1.5
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "35-4",
+  "ref": 35,
+  "ce": 72.0,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "36-1",
+  "ref": 36,
+  "ce": 90.5,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "EC"
+   ],
+   "text": "\u2026initial CE of the Li|Cu cell with base electrolyteis only 84.0% at 0.1 mA cm \u22122(Fig. 1 a), while the initial CE is increased to 90.5% after the addition of 2% TTFEB, indicating stabilized SEIlayer derived from TTFEB that inhibiting the decomposition of the\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "36-2",
+  "ref": 36,
+  "ce": 96.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "EC"
+   ],
+   "text": "\u2026Li dendrites. Withcontrolled Li deposition in TTFEB-containing electrolyte, a signi\ufb01 cantly improved Coulombic e \ufb03ciency (~ 96%) in Li|Cu cell, long lifetime (over 1000 h), and weak polarization in Li|Li cell can be obtained. Moreover, excellent cycling\u2026",
+   "match": [
+    125,
+    128
+   ]
+  }
+ },
+ {
+  "id": "37-1",
+  "ref": 37,
+  "ce": 95.0,
+  "salts": [
+   {
+    "name": "LiDFOB",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.3
+   },
+   {
+    "name": "DEC",
+    "frac": 0.7
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiDFOB",
+    "EC",
+    "DEC"
+   ],
+   "text": "\u2026the ef\ufb01ciency down to 84% in the following 8 cycles. Afterwards, the Coulombic ef\ufb01ciency increased constantly until it reached 95%. During the rest of the cycling exper- iment",
+   "match": [
+    128,
+    131
+   ]
+  }
+ },
+ {
+  "id": "37-2",
+  "ref": 37,
+  "ce": 75.0,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.3
+   },
+   {
+    "name": "DEC",
+    "frac": 0.7
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "EC",
+    "DEC"
+   ],
+   "text": "\u2026(values in the range of 86\u201388%) until the 160th cycle. Then a constant fad- ing of the Coulombic ef\ufb01ciency occurred, down to 75% at the end of the experiment. The 1 M LiDFOB in EC:DEC (3:7, by wt.) electrolyte showed a completely different behavior. The\u2026",
+   "match": [
+    126,
+    129
+   ]
+  }
+ },
+ {
+  "id": "38-1",
+  "ref": 38,
+  "ce": 97.24,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "FEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "DMC",
+    "FEC"
+   ],
+   "text": "\u2026cm\u00002, the average CE increased with the 12-Crown-4 concentration increasing from 0.1 to 1.0 wt%, reaching the highest value of 97.24%. However, at additive concentrations higher than 1.0 wt%, the CE decreased and the polarization voltage rapidly increased (Fig.\u2026",
+   "match": [
+    128,
+    133
+   ]
+  }
+ },
+ {
+  "id": "38-2",
+  "ref": 38,
+  "ce": 98.47,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "FEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "DMC",
+    "FEC"
+   ],
+   "text": "\u2026Li deposition. Therefore, a concentration of 1.0 wt% 12-Crown-4 is used in the subsequent experiments, and a high average CE of 98.47% can be maintained throughout 100 cycles at a current density of 0.5 mA cm\u00002 (Fig. S5). In addition to 12-Crown-4, 18-crown-6 is\u2026",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "38-3",
+  "ref": 38,
+  "ce": 95.45,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "FEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "DMC",
+    "FEC"
+   ],
+   "text": "\u202618-crown-6 is also effective in improving Li CE as the first-principles calculations predict. An average efficiency of 95.45% is obtained for the electrolyte containing 1.0 wt% 18-Crown-6 at 1.0 mA cm\u00002 (Fig. S6). 3.2. In situ observation of Li dendrite\u2026",
+   "match": [
+    120,
+    125
+   ]
+  }
+ },
+ {
+  "id": "39-1",
+  "ref": 39,
+  "ce": 94.4,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.05
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026the RbCE (0.05 m) electrolyte with a low additive concentration (0.05 m RbNO 3 and 0.05 m 18-crown-6) has an improved CE of 94.4% and less fluctuation compared with basic electrolyte (92.2%) in the first 150 cycles. The CE increased to 97 .1% at a higher\u2026",
+   "match": [
+    125,
+    129
+   ]
+  }
+ },
+ {
+  "id": "39-2",
+  "ref": 39,
+  "ce": 97.1,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [],
+   "text": "\u2026(18-crown-6)+ complexes are adsorbed on the dendrite tips, shielding them from Li deposition on the dendrite tips. A high CE of 97.1% is achieved with a capacity of 1 mAh cm\u22122 in a half cell, much higher than when using the additive-free electrolyte (92.2%).\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "39-3",
+  "ref": 39,
+  "ce": 97.5,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "39-4",
+  "ref": 39,
+  "ce": 99.6,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [],
+   "text": "\u2026(4.3 V), and the assembled full cell delivered a stable and long cycling per - formance of over 500 cycles with an average CE of 99.6%. Even with a cathode loading greater than 10 mg cm \u22122 and a thin LMA, the full-cell still showed a stable and high CE of 99.8%\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "39-5",
+  "ref": 39,
+  "ce": 99.8,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [],
+   "text": "\u2026at a high voltage, and the assembled full battery with a cathode material loading up to 10 mg cm \u22122 shows an average CE of 99.8% over 200 cycles, indicating a potential for practical use. DOI: 10.1002/adfm.202102128Dr. S. Gu, Dr. J. Han, Dr. Y . Deng, Dr.\u2026",
+   "match": [
+    124,
+    128
+   ]
+  }
+ },
+ {
+  "id": "39-6",
+  "ref": 39,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [],
+   "text": "\u2026a high initial capacity of 197 .7 mAh g \u22121 under a large discharge current density of 0.5 C (1.2 mA cm\u22122) and a high CE of 99.4% (Figure S11b, Supporting Information), showing good cycling stability. The stable cycling of the cell using RbCE (0.1 m) is\u2026",
+   "match": [
+    124,
+    128
+   ]
+  }
+ },
+ {
+  "id": "39-7",
+  "ref": 39,
+  "ce": 99.2,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [],
+   "text": "\u2026delivered a higher average CE (99.6%) and capacity retention (64.7%) for 500 cycles than that with the basic electrolyte (99.2%, 53.4%) (Figure S11a, Supporting Information). Good electrochemical performance with a high active material loading and lean\u2026",
+   "match": [
+    123,
+    127
+   ]
+  }
+ },
+ {
+  "id": "39-8",
+  "ref": 39,
+  "ce": 92.2,
+  "salts": [
+   {
+    "name": "RbNO3",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [],
+   "text": "\u2026CE of 97.1% is achieved with a capacity of 1 mAh cm\u22122 in a half cell, much higher than when using the additive-free electrolyte (92.2%). Such an additive is very compatible with a nickel-rich ternary cathode at a high voltage, and the assembled full battery with\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "41-1",
+  "ref": 41,
+  "ce": 98.6,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.7
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.3
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "EGD",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiTFSI",
+    "LiNO3",
+    "EC",
+    "EGD"
+   ],
+   "text": "\u2026LiNO3in EC+EGD) with high LiNO3solubility, dendrite- free lithium electrodeposition is obtained, with a high averageanode CE of 98.6% at 0.5 mA cm \u22122and a quite long anode cycling stability of 1000 h. This research has shown that searching for solvents with\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "42-1",
+  "ref": 42,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiFSA",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [
+   {
+    "name": "tetraglyme",
+    "frac": 0.5
+   },
+   {
+    "name": "TTE",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "43-1",
+  "ref": 43,
+  "ce": 97.94,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.5
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.346
+   },
+   {
+    "name": "EMC",
+    "frac": 0.572
+   },
+   {
+    "name": "DMC",
+    "frac": 0.082
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiPF6",
+    "FEC",
+    "EMC",
+    "DMC"
+   ],
+   "text": "\u2026label theelectrolyte withandwithout TMSB .The FEDB electrolyte demonstrates astable cyclability over 500 cycles(at1mAhcm@2)with97.94 %LiCoulombic efficiency intheLi/Cu cell.Inaddition, theFEDB electrolyte exhibits superior rateperformance over theFED\u2026",
+   "match": [
+    128,
+    133
+   ]
+  }
+ },
+ {
+  "id": "44-1",
+  "ref": 44,
+  "ce": 95.4,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026even shorter cycle life than that with the SOAelectrolyte is observed. This behavior can be attributed to the low Li CE of 95.4%, while the underlying reason could possibly be related to the highly electron-deficient nature of TFEB, which will",
+   "match": [
+    124,
+    128
+   ]
+  }
+ },
+ {
+  "id": "44-2",
+  "ref": 44,
+  "ce": 99.4,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026Li metal. In the LHCEs, much better CE is attributed to the large size of theLi deposited on Cu. In particular, very high CEs of 99.4, 99.5, and99.5% are obtained in three LHC Es with diluents of BTFE, TTE, and TFEO, respectively. When a Li anode was paired with\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "44-3",
+  "ref": 44,
+  "ce": 99.5,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026In the LHCEs, much better CE is attributed to the large size of theLi deposited on Cu. In particular, very high CEs of 99.4, 99.5, and99.5% are obtained in three LHC Es with diluents of BTFE, TTE, and TFEO, respectively. When a Li anode was paired with a\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "44-4",
+  "ref": 44,
+  "ce": 99.5,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026In the LHCEs, much better CE is attributed to the large size of theLi deposited on Cu. In particular, very high CEs of 99.4, 99.5, and99.5% are obtained in three LHC Es with diluents of BTFE, TTE, and TFEO, respectively. When a Li anode was paired with a\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "44-5",
+  "ref": 44,
+  "ce": 99.7,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026andwith great Li CEs, Li ||NMC811 cells show significantly improved cycling performance with a high average cell CE reaching 99.7 and 99.8% over cycling. Electroche mical impedance spectroscopy (EIS) was carried out to monitor the resistance after 100\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "44-6",
+  "ref": 44,
+  "ce": 99.8,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [],
+   "text": "\u2026great Li CEs, Li ||NMC811 cells show significantly improved cycling performance with a high average cell CE reaching 99.7 and 99.8% over cycling. Electroche mical impedance spectroscopy (EIS) was carried out to monitor the resistance after 100 cycles.The\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "45-1",
+  "ref": 45,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiFSA",
+    "mol": 0.1
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "46-1",
+  "ref": 46,
+  "ce": 94.8,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [],
+   "text": "\u2026and S16d . As shown in Fig. S16c, the Li metal full cell shows a specific discharge capacity of 182.4 mAh g\u00001 and a high CE of 94.8% after the initial activation cycles. Only after one cycle, the CE of the full cell reaches 99.3% and the CE maintains 99.",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "46-2",
+  "ref": 46,
+  "ce": 99.3,
+  "salts": [],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [],
+   "text": "\u2026182.4 mAh g\u00001 and a high CE of 94.8% after the initial activation cycles. Only after one cycle, the CE of the full cell reaches 99.3% and the CE maintains 99.",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "47-1",
+  "ref": 47,
+  "ce": 92.78,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 7.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "FEC"
+   ],
+   "text": "\u2026u t ,i nH F F( 7m ) ,t h eb a t t e r i e sp r e - sented the high first discharge capacity of 123.8 mAh/g (LNMO) with CE of 92.78% and the superior cycl e stability with the capacity retention of 94.26% after 150 cycl es. Such capacities are compa- rable\u2026",
+   "match": [
+    126,
+    131
+   ]
+  }
+ },
+ {
+  "id": "47-2",
+  "ref": 47,
+  "ce": 99.64,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 7.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiFSI",
+    "FEC"
+   ],
+   "text": "\u2026and 90 mV at the 400th cycle. As the cycle number increases, hCEicontinuously increases from 97.7% at the first 100 cycles to 99.64% during the 300th \u223c400th cycles, indicating a self-healing mechanism (Fig. 2 B) (39). The typical charge \u2013 discharge\u2026",
+   "match": [
+    127,
+    132
+   ]
+  }
+ },
+ {
+  "id": "48-1",
+  "ref": 48,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 0.5
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.5
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DOL",
+    "frac": 0.5
+   },
+   {
+    "name": "DME",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "49-1",
+  "ref": 49,
+  "ce": 97.0,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "ES",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "EC",
+    "ES"
+   ],
+   "text": "\u2026Among the single - solvent electrolyte systems (Figure s 1 and S1-S2), EC and ES show relatively high CE (~97%) and can support Li deposition/dissolution for ~70 and ~140 cycles, respectively . The CE fluctuation during the initial cycling\u2026",
+   "match": [
+    108,
+    111
+   ]
+  }
+ },
+ {
+  "id": "49-2",
+  "ref": 49,
+  "ce": 92.0,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 7,
+   "names": [
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026EC-ES electrolyte can sustain a high CE ( ~97% ) for 450 cycles , whereas the CE of the cell using the EC-DMC electrolyte is ~92% and only last s for 30 cycles before significant deterioration starts to occur (Figure s 3a and S18-S19). Under 1 mA cm-2-2 mAh\u2026",
+   "match": [
+    127,
+    130
+   ]
+  }
+ },
+ {
+  "id": "49-3",
+  "ref": 49,
+  "ce": 95.0,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "EC",
+    "DMC"
+   ],
+   "text": "\u2026is not a simple average of those in the corresponding single -solvent electrolyte s. CE of the EC-DMC cell sustain s at ~95% for 20 cycles before it gradually decreases to ~80% after the 80th cycle , comparable",
+   "match": [
+    122,
+    125
+   ]
+  }
+ },
+ {
+  "id": "49-4",
+  "ref": 49,
+  "ce": 85.0,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "ES",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "ES",
+    "DMC"
+   ],
+   "text": "\u2026decreases to ~80% after the 80th cycle , comparable to that in the EC electrolyte. CE of the ES-DMC electrolyte only reaches ~85% for 5 cycles and decreases rapidly afterwards, althoug h the ES electrolyte exhibits high CE and much longer cycling .\u2026",
+   "match": [
+    127,
+    130
+   ]
+  }
+ },
+ {
+  "id": "49-5",
+  "ref": 49,
+  "ce": 99.9,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.75
+   },
+   {
+    "name": "ES",
+    "frac": 0.25
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 9,
+   "names": [
+    "EC",
+    "ES"
+   ],
+   "text": "\u2026electrolyte optimized for both the Li metal anode and the LiFePO 4 cathode, the EC -ES cell shows stable cycling with high CE (99.9%) and negligible capacity decay over 300 cycles (Figure 4a). Thanks to the preferential solvation of EC, its positive effect is\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "49-6",
+  "ref": 49,
+  "ce": 91.5,
+  "salts": [
+   {
+    "name": "LiClO4",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "ES",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [
+    "ES"
+   ],
+   "text": "\u2026not fully compatible with LiFePO 4 cathode. The Li||LiFePO 4 cell with the ES electrolyte manifests unsatisfactory CEs as low as 91.5% (excluding the",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "50-1",
+  "ref": 50,
+  "ce": 98.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026polyimide (3DOM PI) separator enables the stable lithium plating/stripping cycling with an average Coulombic e \ufb03ciency of ca. 98% for over 400 cycles at 1.0 mA cm \u22122. The 3DOM PI separator shows good electrolyte wettability and large electrolyte uptake due\u2026",
+   "match": [
+    127,
+    130
+   ]
+  }
+ },
+ {
+  "id": "50-2",
+  "ref": 50,
+  "ce": 97.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026highercycling stability with the average Coulombic e \ufb03ciency of 98.0% over 440 cycles, compared with those of 1:3.0 LiFSI/SL (97.3% over 370 cycles) and 1:10.3 LiFSI/SL (68.2% over 50 cycles). However, even the concentrated electrolytes resultedin random\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "50-3",
+  "ref": 50,
+  "ce": 68.2,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026Coulombic e \ufb03ciency of 98.0% over 440 cycles, compared with those of 1:3.0 LiFSI/SL (97.3% over 370 cycles) and 1:10.3 LiFSI/SL (68.2% over 50 cycles). However, even the concentrated electrolytes resultedin random voltage oscillations and sudden decrease\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "51-1",
+  "ref": 51,
+  "ce": 93.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DEC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI",
+    "EC",
+    "DEC"
+   ],
+   "text": "\u2026electrolyte exhibits remarkable compatibility with high-voltage LiCoPO 4 cathode and LMA. The full cells can deliver 93% of their initial capacity even after 1,000 cycles.21 In addition to the fluorinated solvent, the anions of some lithium salts,\u2026",
+   "match": [
+    118,
+    121
+   ]
+  }
+ },
+ {
+  "id": "52-1",
+  "ref": 52,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "52-2",
+  "ref": 52,
+  "ce": 84.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "53-1",
+  "ref": 53,
+  "ce": 97.6,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "MTFP",
+    "frac": 0.9
+   },
+   {
+    "name": "FEC",
+    "frac": 0.1
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiPF6",
+    "MTFP",
+    "FEC"
+   ],
+   "text": "\u2026that the MTFP/FEC system provided performance vastly superior to that of MP/ FEC and EC/DEC electrolytes, exhibiting a CE of 97.6%compared to values of 6.2% and 87.7%, respectively. Themorphologies associated with this vast divergence in CE were then\u2026",
+   "match": [
+    126,
+    130
+   ]
+  }
+ },
+ {
+  "id": "54-1",
+  "ref": 54,
+  "ce": 97.9,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.5
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "TEGDME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiNO3",
+    "EC"
+   ],
+   "text": "\u2026( Figure S2 ). The cells using 50%- and 70%-DSEs can stably cycle for more than 90 cycles and 75 cycles with an average CEs of 97.9% and 97.7%, respectively. In contrast, the CE of the cellusing the baseline electrolyte \ufb01rst becomes unstable and then drops\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "54-2",
+  "ref": 54,
+  "ce": 97.7,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.5
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "TEGDME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiNO3",
+    "EC"
+   ],
+   "text": "\u2026S2 ). The cells using 50%- and 70%-DSEs can stably cycle for more than 90 cycles and 75 cycles with an average CEs of 97.9% and 97.7%, respectively. In contrast, the CE of the cellusing the baseline electrolyte \ufb01rst becomes unstable and then drops sharply after\u2026",
+   "match": [
+    129,
+    133
+   ]
+  }
+ },
+ {
+  "id": "54-3",
+  "ref": 54,
+  "ce": 97.3,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   },
+   {
+    "name": "LiNO3",
+    "mol": 0.5
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "DMC",
+    "frac": 0.5
+   },
+   {
+    "name": "TEGDME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiNO3",
+    "EC"
+   ],
+   "text": "\u2026and then drops sharply after around 30 cycles. The cell using the 50%-DSE can run stably for 210 cycles with an average CE of 97.3%under the lithium deposition conditions of 0.5 mA cm \u22122for 1.0 mAh cm\u22122(Figure 1 c). These data indicate that the cycling\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "55-1",
+  "ref": 55,
+  "ce": 91.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 2.5
+   },
+   {
+    "name": "LiPF6",
+    "mol": 0.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FSA",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI",
+    "FSA"
+   ],
+   "text": "\u2026(FFS) electrolyte. Remarkably, it enables ahighly reversible LMA with an excellent initial coulombic e\ufb03ciency (CE) B91%, and rapidly approaching 99% within only 10 cycles, with average CE outperforming the well-known LMA-compatible fluoroethylene\u2026",
+   "match": [
+    117,
+    120
+   ]
+  }
+ },
+ {
+  "id": "55-2",
+  "ref": 55,
+  "ce": 99.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 2.5
+   },
+   {
+    "name": "LiPF6",
+    "mol": 0.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FSA",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI",
+    "FSA"
+   ],
+   "text": "\u2026Remarkably, it enables ahighly reversible LMA with an excellent initial coulombic e\ufb03ciency (CE) B91%, and rapidly approaching 99% within only 10 cycles, with average CE outperforming the well-known LMA-compatible fluoroethylene carbonate (FEC)-based\u2026",
+   "match": [
+    127,
+    130
+   ]
+  }
+ },
+ {
+  "id": "56-1",
+  "ref": 56,
+  "ce": 98.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 4.6
+   },
+   {
+    "name": "LiTFSI",
+    "mol": 2.3
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 13,
+   "names": [
+    "LiFSI",
+    "LiTFSI",
+    "DME"
+   ],
+   "text": "\u2026with initial CEs of 80.5% vs. 78.1%, and after 54 cycles, the BSEE cell had a residual capacity of 90.9 mAh/g and CE of 98.6% as compared to 54.8 mAh/g and a CE of 97.4% for SSEE (see Table S5). We also considered the possibility that the overall\u2026",
+   "match": [
+    121,
+    125
+   ]
+  }
+ },
+ {
+  "id": "56-2",
+  "ref": 56,
+  "ce": 97.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 4.6
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 13,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026and after 54 cycles, the BSEE cell had a residual capacity of 90.9 mAh/g and CE of 98.6% as compared to 54.8 mAh/g and a CE of 97.4% for SSEE (see Table S5). We also considered the possibility that the overall capacity and CE improvement over SSEE electrolyte\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "57-1",
+  "ref": 57,
+  "ce": 97.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TMS",
+    "frac": 0.5
+   },
+   {
+    "name": "TTE",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 7,
+   "names": [],
+   "text": "\u2026area and thus less tendency to react with the electrolyte. As aresult, the \ufb01rst-cycle Li CE in the LHCE is greatly improved to 97.3%. The Li-metal CE over long-term cycling can be studied by a repeated deposition and stripping method using the bare copper (Cu)\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "58-1",
+  "ref": 58,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiDFOB",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "EC",
+    "frac": 0.5
+   },
+   {
+    "name": "EMC",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "59-1",
+  "ref": 59,
+  "ce": 99.2,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "AN",
+    "frac": 0.9
+   },
+   {
+    "name": "VC",
+    "frac": 0.09
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 2,
+   "names": [
+    "LiFSI",
+    "AN",
+    "VC"
+   ],
+   "text": "\u2026VC additive which can form a poly- carbonate-based SEI layer through the reductive polymerization of VC. A very high Li CE of 99.2% was achieved at an optimal molar ratio of [LiFSI]:[AN]:[VC] = 0.52:1:0.09 at 0.2 mA cm \u22122 for the LiFSI\u2013AN\u2013VC (LAV)\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "59-2",
+  "ref": 59,
+  "ce": 98.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "AN",
+    "frac": 0.9
+   },
+   {
+    "name": "VC",
+    "frac": 0.09
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [
+    "LiFSI",
+    "AN"
+   ],
+   "text": ".2%, 98.6%, 98.4%, 97 .6%, and 96.9% at 0.2, 1, 2, 3, and 4 mA cm \u22122, respectively (Figure 5f). These Li CEs are significantly higher than\u2026",
+   "match": [
+    5,
+    9
+   ]
+  }
+ },
+ {
+  "id": "59-3",
+  "ref": 59,
+  "ce": 98.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "AN",
+    "frac": 0.9
+   },
+   {
+    "name": "VC",
+    "frac": 0.09
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 8,
+   "names": [
+    "LiFSI",
+    "AN"
+   ],
+   "text": ".2%, 98.6%, 98.4%, 97 .6%, and 96.9% at 0.2, 1, 2, 3, and 4 mA cm \u22122, respectively (Figure 5f). These Li CEs are significantly higher than those\u2026",
+   "match": [
+    12,
+    16
+   ]
+  }
+ },
+ {
+  "id": "59-4",
+  "ref": 59,
+  "ce": 97.6,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "AN",
+    "frac": 0.9
+   },
+   {
+    "name": "VC",
+    "frac": 0.09
+   }
+  ],
+  "evidence": {
+   "status": "missing"
+  }
+ },
+ {
+  "id": "59-5",
+  "ref": 59,
+  "ce": 96.9,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 10.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "AN",
+    "frac": 0.9
+   },
+   {
+    "name": "VC",
+    "frac": 0.09
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 4,
+   "names": [
+    "LiFSI",
+    "AN",
+    "VC"
+   ],
+   "text": "\u2026baseline carbonate electrolyte with high FEC content (1 m LiPF 6 in EC:DMC (1:2 by vol.) + 10 vol% FEC) only exhibits a Li CE of 96.9%, still lower than those achieved by the LAV electrolytes. The addition of FEC has also been assessed in the LiFSI\u2013AN\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "60-1",
+  "ref": 60,
+  "ce": 98.78,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 3.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.5
+   },
+   {
+    "name": "DOL",
+    "frac": 0.5
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026from the combined e \ufb00ect, Cu \u2225LiFePO 4cells delivered excellent cyclic performance at 0.5 mA/cm2with an average CE of up to 98.78%, retaining a reasonable discharge capacity after",
+   "match": [
+    125,
+    130
+   ]
+  }
+ },
+ {
+  "id": "61-1",
+  "ref": 61,
+  "ce": 97.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DPE",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [
+    "LiFSI",
+    "DPE"
+   ],
+   "text": "\u2026expected to yield the CIP structure via MD. These electrolytes show similar improvements in performance at \u221240 \u00b0C with CEs of 97.3 and 98.2%, respectively (Supplementary Fig. 13). Additionally, the influence of bulk ion transport and interphasial kinetics on\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "61-2",
+  "ref": 61,
+  "ce": 98.2,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DBE",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 6,
+   "names": [
+    "LiFSI",
+    "DBE"
+   ],
+   "text": "\u2026to yield the CIP structure via MD. These electrolytes show similar improvements in performance at \u221240 \u00b0C with CEs of 97.3 and 98.2%, respectively (Supplementary Fig. 13). Additionally, the influence of bulk ion transport and interphasial kinetics on Li metal\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "62-1",
+  "ref": 62,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026the leakage current is a good met - ric to evaluate the corrosion of Al current collector7,23. As shown in 1.2 M LiFSI/F4DEE, >99.4% 1.2 M LiFSI/F5DEE, 99.74/99.90%a e0246810121416182095969798991001011021 M LiFSI/FDMB, 5 cycles 1.2 M LiFSI/DEE, never 1.2 M\u2026",
+   "match": [
+    128,
+    132
+   ]
+  }
+ },
+ {
+  "id": "62-2",
+  "ref": 62,
+  "ce": 99.0,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026mA cm\u22122 current density and 1 mAh cm\u22122 areal capacity. The 1 M LiFSI/FDMB showed a five-cycle activation before ramp - ing up to 99% CE21; while the DEE electrolyte never reached a CE of 99% (Supplementary Fig. 22). This confirms the argument above that DEE\u2026",
+   "match": [
+    130,
+    133
+   ]
+  }
+ },
+ {
+  "id": "62-3",
+  "ref": 62,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026cm\u22122, the CE rapidly reached roughly 99.5% and the activation could even be completed by the second cycle (the second cycle CE > 99.3%), which is one of the fastest among the state-of-the-art electrolytes (Fig. 4d). At high current densities ( >4 mA cm\u22122), the\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "62-4",
+  "ref": 62,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026cm\u22122, the CE rapidly reached roughly 99.5% and the activation could even be completed by the second cycle (the second cycle CE > 99.3%), which is one of the fastest among the state-of-the-art electrolytes (Fig. 4d). At high current densities ( >4 mA cm\u22122), the\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "62-5",
+  "ref": 62,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026(Fig. 4c and source data of Fig. 4). When the areal capacity was increased to 5 mAh cm\u22122, the CE rapidly reached roughly 99.5% and the activation could even be completed by the second cycle (the second cycle CE > 99.3%), which is one of the fastest among\u2026",
+   "match": [
+    122,
+    126
+   ]
+  }
+ },
+ {
+  "id": "62-6",
+  "ref": 62,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI"
+   ],
+   "text": "\u2026(Fig. 4c and source data of Fig. 4). When the areal capacity was increased to 5 mAh cm\u22122, the CE rapidly reached roughly 99.5% and the activation could even be completed by the second cycle (the second cycle CE > 99.3%), which is one of the fastest among\u2026",
+   "match": [
+    122,
+    126
+   ]
+  }
+ },
+ {
+  "id": "63-1",
+  "ref": 63,
+  "ce": 98.66,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DEE",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI",
+    "DEE"
+   ],
+   "text": "\u2026with 1 M LiFSI/DME, and CE \ufb02uctuates signi \ufb01cantly. In contrast, 1 M LiFSI/DEE shows stable cycling with an average CE of 98.66%. At a higher concentration of 4 M LiFSI, the average CEs further improve for both DME and DEE Figure 4.",
+   "match": [
+    123,
+    128
+   ]
+  }
+ },
+ {
+  "id": "63-2",
+  "ref": 63,
+  "ce": 99.38,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 4.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DEE",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI",
+    "DEE"
+   ],
+   "text": "\u2026superiorcompatibility of DEE with Li. At higher LiFSI concentration of 4 M, both DME and DEE show improved CEs (99.04% and 99.38%, respectively) compared to their 1 M counterparts, which agrees with previous \ufb01ndings on HCEs. 17,44,19,45,46The higher CE of\u2026",
+   "match": [
+    124,
+    129
+   ]
+  }
+ },
+ {
+  "id": "63-3",
+  "ref": 63,
+  "ce": 99.04,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 4.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026indicates superiorcompatibility of DEE with Li. At higher LiFSI concentration of 4 M, both DME and DEE show improved CEs (99.04% and 99.38%, respectively) compared to their 1 M counterparts, which agrees with previous \ufb01ndings on HCEs. 17,44,19,45,46The\u2026",
+   "match": [
+    123,
+    128
+   ]
+  }
+ },
+ {
+  "id": "63-4",
+  "ref": 63,
+  "ce": 98.16,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 1.0
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 5,
+   "names": [
+    "LiFSI",
+    "DME"
+   ],
+   "text": "\u2026determined by a modi \ufb01ed Aurbach method ( Figure 3 b).43With 1 M LiFSI, CE of DEE reaches 99.02% and outperforms that of DME at 98.16%. Such highCE even at a normal salt concentration indicates superiorcompatibility of DEE with Li. At higher LiFSI concentration\u2026",
+   "match": [
+    129,
+    134
+   ]
+  }
+ },
+ {
+  "id": "64-1",
+  "ref": 64,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DMC",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiFSI",
+    "DMC"
+   ],
+   "text": "\u2026can reach 99.8%, which is very close to that in the TEP-LHCE (99.9%) and higher than those in the DMC-LHCE (99.7%) and TMS-LHCE (99.3% for 300 cycles, 99.8% for first200 cycles) ( SI Appendix , Fig. S2 ). The Li ||NMC811 cell with DME-LHCE retained \u223c90% capacity\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "64-2",
+  "ref": 64,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "DME"
+   ],
+   "text": "\u2026the coordinating solvent se-lected (Fig. 3 A), which follow the order as: 99.1% (TEP-LHCE) < 99.2% (TMS-LHCE) <99.3% (DMC-LHCE) <99.5% (DME- LHCE). In long-term cycling of symmetric Li ||Li cells in different LHCEs, variations of voltage profiles can also be\u2026",
+   "match": [
+    130,
+    134
+   ]
+  }
+ },
+ {
+  "id": "65-1",
+  "ref": 65,
+  "ce": 99.2,
+  "salts": [
+   {
+    "name": "LiPF6",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FEC",
+    "frac": 0.2
+   },
+   {
+    "name": "FEMC",
+    "frac": 0.6
+   },
+   {
+    "name": "HFE",
+    "frac": 0.2
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiPF6",
+    "FEC",
+    "FEMC",
+    "HFE"
+   ],
+   "text": "\u2026at the anode side28,29, this all-fluori - nated electrolyte enables a high Li plating/stripping Coulombic efficiency of 99.2% and suppresses dendrites without raising the interfacial impedance. It also supports the stable cycling of NMC811 (Coulombic\u2026",
+   "match": [
+    121,
+    125
+   ]
+  }
+ },
+ {
+  "id": "66-1",
+  "ref": 66,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "TEP",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI",
+    "TEP"
+   ],
+   "text": "\u2026(LiFSI)-triethylphos- phate (TEP) enables dendrite-free Li metal plating/stripping onthe Cu electrode with a high CCE of 99.3% up to 350 cycles.Understanding of the fundamental electrochemistry tells us that thedecrease of solvent activity in ISC\u2026",
+   "match": [
+    122,
+    126
+   ]
+  }
+ },
+ {
+  "id": "67-1",
+  "ref": 67,
+  "ce": null,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": null
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.545
+   },
+   {
+    "name": "TTE",
+    "frac": 0.273
+   }
+  ],
+  "evidence": {
+   "status": "no_value"
+  }
+ },
+ {
+  "id": "68-1",
+  "ref": 68,
+  "ce": 99.3,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.29
+   },
+   {
+    "name": "FB",
+    "frac": 0.71
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 3,
+   "names": [
+    "LiFSI",
+    "DME",
+    "FB"
+   ],
+   "text": "\u2026of LiFSI-HCE (Figures S6b and S7b, Supporting Information). When diluted with FB, the ACE could be further improved to 99.3% and the voltage pro- file remains stable for over 500 cycles, which is consistent with the result of cell impedance (Figures\u2026",
+   "match": [
+    120,
+    124
+   ]
+  }
+ },
+ {
+  "id": "69-1",
+  "ref": 69,
+  "ce": 97.2,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "DME",
+    "frac": 0.33
+   },
+   {
+    "name": "TTE",
+    "frac": 0.67
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 7,
+   "names": [
+    "LiFSI",
+    "DME",
+    "TTE"
+   ],
+   "text": "\u20267HCE cells were highly scattered and it was difficult to determine the average CE, the Li CE of the dHCE cells converged to 97.2% after a few stabilization cycles (Figs. S11a and b). Furthermore, dHCE enabled the cycling of Li||NMC622 at subzero\u2026",
+   "match": [
+    125,
+    129
+   ]
+  }
+ },
+ {
+  "id": "70-1",
+  "ref": 70,
+  "ce": 99.4,
+  "salts": [
+   {
+    "name": "LiTFSI",
+    "mol": 1.2
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FM",
+    "frac": null
+   },
+   {
+    "name": "AN",
+    "frac": null
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 11,
+   "names": [
+    "LiTFSI",
+    "FM",
+    "AN"
+   ],
+   "text": "\u2026within the first 20 activation cycles and stable Li plating-stripping was demonstrated up to 200 cycles with an average CE of 99.4%. The minimal increase in overpotential (Figure 3B) indicates the SEI formed from liquefied gas electrolyte remains stable even\u2026",
+   "match": [
+    127,
+    131
+   ]
+  }
+ },
+ {
+  "id": "71-1",
+  "ref": 71,
+  "ce": 99.5,
+  "salts": [
+   {
+    "name": "LiFSI",
+    "mol": 1.0
+   }
+  ],
+  "solvents": [
+   {
+    "name": "FDMH",
+    "frac": 0.86
+   },
+   {
+    "name": "DME",
+    "frac": 0.14
+   }
+  ],
+  "evidence": {
+   "status": "found",
+   "page": 1,
+   "names": [
+    "LiFSI",
+    "FDMH",
+    "DME"
+   ],
+   "text": "\u2026resistance without compro- mising electrolyte stability. With this 1 m LiFSI/6FDMH-DME formulation, high Li cycling CE (99.5%) and oxidative stability (6 V",
+   "match": [
+    121,
+    125
+   ]
+  }
+ }
+]

@@ -11,10 +11,10 @@ export function Panel({ accent, icon, title, subtitle, badge, style, children })
       <header className="flex items-center gap-3 border-b border-white/[0.06] px-5 py-3.5">
         <span className={`grid h-8 w-8 place-items-center rounded-lg ${a.icon}`}>{icon}</span>
         <div className="leading-tight">
-          <div className="text-[14.5px] font-semibold text-ink-100">{title}</div>
-          <div className="text-[12px] text-ink-400">{subtitle}</div>
+          <div className="text-[15.5px] font-semibold text-ink-100">{title}</div>
+          <div className="text-[13px] text-ink-400">{subtitle}</div>
         </div>
-        <span className={`ml-auto rounded-full border px-2.5 py-0.5 font-mono text-[10.5px] uppercase tracking-[0.14em] ${a.badge}`}>{badge}</span>
+        <span className={`ml-auto rounded-full border px-2.5 py-0.5 font-mono text-[11px] uppercase tracking-[0.14em] ${a.badge}`}>{badge}</span>
       </header>
       <div className="flex flex-1 flex-col gap-4 p-5">{children}</div>
     </section>
@@ -23,7 +23,7 @@ export function Panel({ accent, icon, title, subtitle, badge, style, children })
 
 export function Label({ children, right }) {
   return (
-    <div className="mb-2 flex items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.14em] text-ink-500">
+    <div className="mb-2 flex items-center justify-between font-mono text-[11.5px] uppercase tracking-[0.14em] text-ink-500">
       <span>{children}</span>
       {right}
     </div>

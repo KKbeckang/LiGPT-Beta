@@ -1,13 +1,14 @@
 import { easeInOutCubic, progress } from '../lib/motion';
 import { Background } from './parts';
 import { AppScene } from './scenes/AppScene';
+import { DataScene } from './scenes/DataScene';
 import { GraphScene } from './scenes/GraphScene';
 import { Intro } from './scenes/Intro';
 import { Outro } from './scenes/Outro';
 import { Pipeline } from './scenes/Pipeline';
 import { DURATION, FADE, HEIGHT, SCENES, WIDTH } from './timeline';
 
-const COMPONENTS = { intro: Intro, pipeline: Pipeline, graph: GraphScene, app: AppScene, outro: Outro };
+const COMPONENTS = { intro: Intro, pipeline: Pipeline, graph: GraphScene, app: AppScene, data: DataScene, outro: Outro };
 
 export function Composition({ t }) {
   return (

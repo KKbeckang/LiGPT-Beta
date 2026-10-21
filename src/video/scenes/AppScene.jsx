@@ -6,16 +6,16 @@ import { easeInOutCubic, easeOutCubic, lerp, progress } from '../../lib/motion';
 import { Caption, Cursor } from '../parts';
 
 const QUESTION = DEMO_EXAMPLES[0];
-const APP_W = 1440;
-const APP_H = 1012;
-const CHROME = 40;
-const FRAME_H = APP_H + CHROME;
+export const APP_W = 1440;
+export const APP_H = 1012;
+export const CHROME = 40;
+export const FRAME_H = APP_H + CHROME;
 
 // Points in frame coordinates (the app plus its title bar).
-const PILL = { x: 919, y: 514 + CHROME };
-const MENU_ITEMS = [611, 667, 723].map((y) => ({ x: 860, y: y + CHROME }));
-const INPUT = { x: 560, y: 514 + CHROME };
-const ASK = { x: 1050, y: 514 + CHROME };
+const PILL = { x: 965, y: 512 + CHROME };
+const MENU_ITEMS = [608, 664, 720].map((y) => ({ x: 889, y: y + CHROME }));
+const INPUT = { x: 611, y: 512 + CHROME };
+const ASK = { x: 1096, y: 512 + CHROME };
 
 const T = {
   open: 2.2,
@@ -28,8 +28,8 @@ const T = {
   graph: 23.6,
 };
 
-// The page scrolls down to the result graph after the two answers.
-const GRAPH_SCROLL = 786;
+// The page scrolls to its foot after the two answers, bringing the result graph and cross-check into view.
+const GRAPH_SCROLL = 678;
 const SCROLL = [
   [22.6, 0],
   [23.9, GRAPH_SCROLL],
@@ -44,8 +44,8 @@ function scrollAt(l) {
 const FULL = { x: APP_W / 2, y: FRAME_H / 2, s: 0.93 };
 const SHOTS = [
   [0, FULL],
-  [2.0, { x: 760, y: 560, s: 1.12 }],
-  [7.6, { x: 760, y: 560, s: 1.12 }],
+  [2.0, { x: 800, y: 560, s: 1.12 }],
+  [7.6, { x: 800, y: 560, s: 1.12 }],
   [8.6, FULL],
   [16.4, FULL],
   [17.4, { x: 375, y: 625, s: 1.22 }],
@@ -54,10 +54,10 @@ const SHOTS = [
   [22.0, { x: 1065, y: 560, s: 1.25 }],
   [22.9, FULL],
   [23.9, FULL],
-  [24.7, { x: 720, y: 370, s: 1.3 }],
-  [27.4, { x: 720, y: 370, s: 1.3 }],
-  [28.2, { x: 720, y: 520, s: 1.18 }],
-  [30.0, { x: 720, y: 520, s: 1.18 }],
+  [24.7, { x: 720, y: 609, s: 1.22 }],
+  [27.4, { x: 720, y: 609, s: 1.22 }],
+  [28.2, { x: 720, y: 760, s: 1.12 }],
+  [30.0, { x: 720, y: 760, s: 1.12 }],
   [31.0, FULL],
 ];
 
@@ -102,14 +102,14 @@ function cursorAt(l) {
   return { x: lerp(a.x, b.x, k), y: lerp(a.y, b.y, k) };
 }
 
-function TitleBar() {
+export function TitleBar({ url = 'localhost:5173/?demo' }) {
   return (
     <div className="flex items-center gap-2 border-b border-white/[0.07] px-4" style={{ height: CHROME, background: '#0B0F17' }}>
       {['#FF5F57', '#FEBC2E', '#28C840'].map((c) => (
         <span key={c} className="h-3 w-3 rounded-full" style={{ background: c, opacity: 0.85 }} />
       ))}
       <div className="mx-auto flex h-6 w-[420px] items-center justify-center rounded-md bg-white/[0.05] font-mono text-[12px] text-ink-400">
-        localhost:5173/?demo
+        {url}
       </div>
       <span className="w-[52px]" />
     </div>

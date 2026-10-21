@@ -60,11 +60,11 @@ export function CypherBlock({ code, progress = 1 }) {
   const typing = progress < 1;
   return (
     <div className="overflow-hidden rounded-xl border border-white/[0.07] bg-black/35">
-      <div className="flex items-center gap-2 border-b border-white/[0.06] px-3 py-2 font-mono text-[10.5px] uppercase tracking-[0.14em] text-ink-500">
+      <div className="flex items-center gap-2 border-b border-white/[0.06] px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
         <CodeIcon />
         Generated Cypher
       </div>
-      <pre className="px-3 py-2.5 font-mono text-[12px] leading-[1.6]">
+      <pre className="px-3 py-2.5 font-mono text-[13px] leading-[1.6]">
         {Array.from({ length: lineCount }, (_, i) => (
           <div key={i} className="flex">
             <span className="w-6 shrink-0 select-none text-right text-ink-600">{i + 1}</span>

@@ -1,4 +1,4 @@
-import records from '../../demo/records.json';
+import records from '../../data/records.json';
 import { clamp, easeOutBack, easeOutCubic, progress } from '../../lib/motion';
 import { CountUp, SectionTitle } from '../parts';
 

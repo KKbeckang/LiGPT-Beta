@@ -9,7 +9,7 @@ export function QueryBox({ value, onChange, onSubmit, size = 'lg', readOnly = fa
     event.preventDefault();
     if (value.trim() && !busy) onSubmit?.(value.trim());
   };
-  const textClass = lg ? 'text-[17px]' : 'text-[14.5px]';
+  const textClass = lg ? 'text-[18px]' : 'text-[15.5px]';
   return (
     <form
       onSubmit={submit}

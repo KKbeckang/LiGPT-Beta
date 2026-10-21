@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { findRecord, PAPERS, paperShort } from '../lib/data';
 import { formatCE, formatElectrolyte, parseGraphName } from '../lib/electrolyte';
 import { layoutGraph } from '../lib/graph';
 import { clamp, easeOutBack, easeOutCubic, progress } from '../lib/motion';
@@ -93,8 +94,8 @@ function placeLabels(edges, links, nodes) {
   const boxes = nodes.flatMap((n) => {
     const own = [{ x: n.x - n.r - 4, y: n.y - n.r - 4, w: 2 * n.r + 8, h: 2 * n.r + 8 }];
     if (n.label === 'Electrolyte') {
-      const w = formatElectrolyte(parseGraphName(n.name)).length * 6.8;
-      own.push({ x: n.x - w / 2, y: n.y + n.r + 6, w, h: 18 });
+      const w = formatElectrolyte(parseGraphName(n.name)).length * 7.4;
+      own.push({ x: n.x - w / 2, y: n.y + n.r + 6, w, h: 19 });
     }
     return own;
   });
@@ -136,8 +137,16 @@ function NodeCaption({ node, style }) {
   );
 }
 
+// What a click on a node opens: an electrolyte's record (or its paper), or a paper.
+function openTarget(n, ref) {
+  if (n.label === 'Reference') return { type: 'paper', ref: n.ref };
+  if (n.label !== 'Electrolyte' || ref == null) return null;
+  const record = findRecord({ name: n.name, ce: n.ce, ref });
+  return record ? { type: 'record', id: record.id } : { type: 'paper', ref };
+}
+
 // citedRefs: papers the LLM answer quoted; confirmed: "ref|ce" keys of graph facts found in those passages.
-export function ResultGraph({ graph, progress: p = 1, highlight = 1, citedRefs, confirmed, interactive = true }) {
+export function ResultGraph({ graph, progress: p = 1, highlight = 1, citedRefs, confirmed, interactive = true, onOpen }) {
   const layout = useMemo(() => layoutGraph(graph, W, H), [graph]);
   const edges = useMemo(() => layout.links.map((l) => edge(l, layout.nodes)), [layout]);
   const labelFits = useMemo(() => placeLabels(edges, layout.links, layout.nodes), [edges, layout]);
@@ -224,6 +233,7 @@ export function ResultGraph({ graph, progress: p = 1, highlight = 1, citedRefs, 
         const style = cited && glow > 0 ? NODE.Cited : NODE[n.label] || NODE.Reference;
         const isConfirmed = n.label === 'Electrolyte' && confirmed?.has(`${refOf(n)}|${n.ce}`);
         const label = n.label === 'Electrolyte' ? formatElectrolyte(parseGraphName(n.name)) : null;
+        const target = interactive && onOpen ? openTarget(n, refOf(n)) : null;
         return (
           <g
             key={n.id}
@@ -231,13 +241,14 @@ export function ResultGraph({ graph, progress: p = 1, highlight = 1, citedRefs, 
             opacity={clamp(k * 1.4) * dim(n.id)}
             onMouseEnter={interactive ? () => setHover(n.id) : undefined}
             onMouseLeave={interactive ? () => setHover(null) : undefined}
-            style={interactive ? { cursor: 'default' } : undefined}
+            onClick={target ? () => onOpen(target) : undefined}
+            style={interactive ? { cursor: target ? 'pointer' : 'default' } : undefined}
           >
             <title>
               {n.label === 'Electrolyte'
                 ? `${n.name.trim()} · CE ${formatCE(n.ce)}`
                 : n.label === 'Reference'
-                  ? `Ref. ${n.ref}${n.title ? ` · ${n.title}` : ''}`
+                  ? `Ref. ${n.ref} · ${n.title || PAPERS.get(n.ref)?.title || paperShort(n.ref)}`
                   : `${n.label} · ${n.name}`}
             </title>
             {(n.label === 'Electrolyte' || cited) && <circle r={n.r + 10} fill={cited ? '#8B5CF6' : '#2DD4BF'} opacity={cited ? 0.28 * glow : 0.14} />}
@@ -250,7 +261,7 @@ export function ResultGraph({ graph, progress: p = 1, highlight = 1, citedRefs, 
               </g>
             )}
             {label && (
-              <text y={n.r + 20} textAnchor="middle" fontSize="12.5" fill="#E8ECF3" fontFamily="Inter Variable, Inter, sans-serif" paintOrder="stroke" stroke="#0A0D14" strokeWidth="4">
+              <text y={n.r + 21} textAnchor="middle" fontSize="13.5" fill="#E8ECF3" fontFamily="Inter Variable, Inter, sans-serif" paintOrder="stroke" stroke="#0A0D14" strokeWidth="4">
                 {label}
               </text>
             )}
@@ -285,10 +296,10 @@ export function ResultGraphSection({ graph, style, ...props }) {
           <GraphIcon />
         </span>
         <div className="leading-tight">
-          <div className="text-[14.5px] font-semibold text-ink-100">Result graph</div>
-          <div className="text-[12px] text-ink-400">{(SOURCE_TEXT[graph.source] || SOURCE_TEXT.derived)(graph)}</div>
+          <div className="text-[15.5px] font-semibold text-ink-100">Result graph</div>
+          <div className="text-[13px] text-ink-400">{(SOURCE_TEXT[graph.source] || SOURCE_TEXT.derived)(graph)}</div>
         </div>
-        <div className="ml-auto flex items-center gap-4 font-mono text-[11px] text-ink-400">
+        <div className="ml-auto flex items-center gap-4 font-mono text-[12px] text-ink-400">
           <Legend color="#14B8A6">electrolyte · CE %</Legend>
           <Legend color="#F59E0B">salt</Legend>
           <Legend color="#0EA5E9">solvent</Legend>

@@ -2,7 +2,7 @@ import { LogoMark } from '../../components/Logo';
 import { easeOutBack, easeOutCubic, progress } from '../../lib/motion';
 
 const TEAM = ['Xinyi Ni', 'Zizhang Chen', 'Rongda Kang', 'Sheng-Lun (Mark) Liao', 'Pengyu Hong', 'Sandeep R. Madireddy'];
-const FEATURES = ['Neo4j knowledge graph', 'OpenAI + Anthropic models', 'Answers cross-checked against sources'];
+const FEATURES = ['Neo4j knowledge graph', 'OpenAI + Anthropic models', 'Every value traced to its paper'];
 
 export function Outro({ t }) {
   const logo = easeOutBack(progress(t, 0.2, 0.9));

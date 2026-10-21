@@ -1,7 +1,7 @@
 // The knowledge graph the extraction pipeline writes, built from the real records and laid out
 // once with d3-force. Every node gets the time (scene seconds) at which it is "written".
 import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY } from 'd3-force';
-import records from '../demo/records.json';
+import records from '../data/records.json';
 import { graphName } from '../lib/electrolyte';
 
 export const INSERT_START = 1.4;

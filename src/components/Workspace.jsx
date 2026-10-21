@@ -1,11 +1,13 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { crossCheck } from '../lib/crosscheck';
+import { answerToMarkdown, download, rowsToCSV } from '../lib/data';
 import { isGraph } from '../lib/graph';
 import { enter, progress } from '../lib/motion';
 import { activeLoadingStep, revealAt, revealTimeline } from '../lib/reveal';
 import { CrossCheck } from './CrossCheck';
-import { Header } from './Header';
+import { Shell } from './Header';
 import { Hero } from './Hero';
+import { CheckIcon, CopyIcon, DownloadIcon } from './Icons';
 import { KnowledgeGraphPanel } from './KnowledgeGraphPanel';
 import { LLMPanel } from './LLMPanel';
 import { ModelPicker } from './ModelPicker';
@@ -49,7 +51,7 @@ function LoadingPanels({ elapsed }) {
 }
 
 // graphElapsed lets the demo video start the graph animation when the camera reaches it.
-function Results({ result, elapsed, graphElapsed }) {
+function Results({ result, elapsed, graphElapsed, onOpen }) {
   const timeline = useMemo(() => revealTimeline(result), [result]);
   const check = useMemo(() => crossCheck(result.rows, result.sources), [result]);
   const citedRefs = useMemo(() => new Set(result.sources.map((s) => s.ref)), [result]);
@@ -62,8 +64,8 @@ function Results({ result, elapsed, graphElapsed }) {
   return (
     <>
       <div className="mt-5 grid grid-cols-1 items-start gap-5 lg:grid-cols-2">
-        <KnowledgeGraphPanel result={result} reveal={reveal} style={panelIn} />
-        <LLMPanel result={result} reveal={reveal} style={panelIn} />
+        <KnowledgeGraphPanel result={result} reveal={reveal} style={panelIn} onOpen={onOpen} />
+        <LLMPanel result={result} reveal={reveal} style={panelIn} onOpen={onOpen} />
       </div>
       {isGraph(result.graph) && (
         <div className="mt-5">
@@ -73,6 +75,7 @@ function Results({ result, elapsed, graphElapsed }) {
             highlight={highlight}
             citedRefs={citedRefs}
             confirmed={confirmed}
+            onOpen={onOpen}
             style={enter(Math.min(1, graphProgress * 4), 14)}
           />
         </div>
@@ -83,6 +86,26 @@ function Results({ result, elapsed, graphElapsed }) {
         </div>
       )}
     </>
+  );
+}
+
+function ExportButtons({ query, result }) {
+  const [copied, setCopied] = useState(false);
+  const copy = () =>
+    navigator.clipboard?.writeText(answerToMarkdown(query, result)).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1400);
+    });
+  const button = 'inline-flex items-center gap-1.5 rounded-lg border border-white/10 px-2.5 py-1 text-[13px] text-ink-300 transition hover:border-white/25 hover:text-ink-100';
+  return (
+    <span className="flex items-center gap-2">
+      <button type="button" className={button} onClick={() => download('lithiummind-answer.csv', rowsToCSV(result.rows))} disabled={!result.rows.length}>
+        <DownloadIcon className="h-3.5 w-3.5" /> Rows as CSV
+      </button>
+      <button type="button" className={button} onClick={copy}>
+        {copied ? <CheckIcon /> : <CopyIcon className="h-3.5 w-3.5" />} {copied ? 'Copied' : 'Copy as Markdown'}
+      </button>
+    </span>
   );
 }
 
@@ -104,7 +127,7 @@ function ErrorCard({ error, demo }) {
   );
 }
 
-// The whole page as a function of its state. The app drives it from user input and the server;
+// The Ask view as a function of its state. The app drives it from user input and the server;
 // the demo video drives it from a timeline.
 export function Workspace({
   demo,
@@ -114,6 +137,7 @@ export function Workspace({
   onSubmit,
   onReset,
   examples,
+  recent,
   result,
   error,
   loadingElapsed = 0,
@@ -123,50 +147,52 @@ export function Workspace({
   caret = false,
   pressed = false,
   picker,
+  onNavigate,
+  onOpen,
 }) {
   const pickerFor = (size) => picker && <ModelPicker {...picker} size={size} demo={demo} />;
   return (
-    <div className="bg-aurora relative min-h-screen overflow-hidden">
-      <div className="bg-dots pointer-events-none absolute inset-0" />
-      <Header demo={demo} onHome={onReset} model={picker?.value} />
-      <main className="relative z-10 px-8 pb-10">
-        {phase === 'hero' ? (
-          <Hero
-            query={query}
-            onQueryChange={onQueryChange}
+    <Shell demo={demo} onHome={onReset} model={picker?.value} view="ask" onNavigate={onNavigate}>
+      {phase === 'hero' ? (
+        <Hero
+          query={query}
+          onQueryChange={onQueryChange}
+          onSubmit={onSubmit}
+          examples={examples}
+          recent={recent}
+          onExample={onSubmit}
+          readOnly={readOnly}
+          caret={caret}
+          pressed={pressed}
+          picker={pickerFor('lg')}
+        />
+      ) : (
+        <div className="mx-auto max-w-[1360px] pt-2">
+          <QueryBox
+            size="sm"
+            value={query}
+            onChange={onQueryChange}
             onSubmit={onSubmit}
-            examples={examples}
-            onExample={onSubmit}
             readOnly={readOnly}
-            caret={caret}
-            pressed={pressed}
-            picker={pickerFor('lg')}
+            busy={phase === 'loading'}
+            picker={pickerFor('sm')}
           />
-        ) : (
-          <div className="mx-auto max-w-[1360px] pt-2">
-            <QueryBox
-              size="sm"
-              value={query}
-              onChange={onQueryChange}
-              onSubmit={onSubmit}
-              readOnly={readOnly}
-              busy={phase === 'loading'}
-              picker={pickerFor('sm')}
-            />
-            <div className="mt-3 flex items-center justify-between">
-              <PipelineSteps active={activeLoadingStep(loadingElapsed)} done={phase === 'results'} elapsed={loadingElapsed} />
-              {phase === 'results' && (
-                <span className="font-mono text-[11px] text-ink-500">
+          <div className="mt-3 flex items-center justify-between">
+            <PipelineSteps active={activeLoadingStep(loadingElapsed)} done={phase === 'results'} elapsed={loadingElapsed} />
+            {phase === 'results' && (
+              <span className="flex items-center gap-4">
+                <span className="font-mono text-[12px] text-ink-500">
                   {result.rows.length} graph rows · {result.sources.length} passages
                 </span>
-              )}
-            </div>
-            {phase === 'loading' && <LoadingPanels elapsed={loadingElapsed} />}
-            {phase === 'results' && <Results result={result} elapsed={revealElapsed} graphElapsed={graphElapsed} />}
-            {phase === 'error' && <ErrorCard error={error} demo={demo} />}
+                {!readOnly && <ExportButtons query={query} result={result} />}
+              </span>
+            )}
           </div>
-        )}
-      </main>
-    </div>
+          {phase === 'loading' && <LoadingPanels elapsed={loadingElapsed} />}
+          {phase === 'results' && <Results result={result} elapsed={revealElapsed} graphElapsed={graphElapsed} onOpen={onOpen} />}
+          {phase === 'error' && <ErrorCard error={error} demo={demo} />}
+        </div>
+      )}
+    </Shell>
   );
 }

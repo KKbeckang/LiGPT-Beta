@@ -1,8 +1,8 @@
-// Demo mode: answers come from the real extraction results in database/extracted_info
-// (exported to records.json). Knowledge-graph rows are computed from those records the way the
-// Cypher query would return them. The LLM answers for the example questions were written from
-// passages stored in the project's Chroma vector store; other questions get graph rows only.
-import records from './records.json';
+// Demo mode: answers come from the real extraction results in database/extracted_info, exported to
+// src/data/records.json by scripts/export_records.py. Knowledge-graph rows are computed from those
+// records the way the Cypher query would return them. The LLM answers for the example questions were
+// written from passages stored in the project's Chroma vector store; other questions get graph rows only.
+import records from '../data/records.json';
 import { formatCE, formatElectrolyte, graphName } from '../lib/electrolyte';
 import { graphFromRows } from '../lib/graph';
 
